@@ -69,7 +69,7 @@ public class CANTool {
 		int id = Integer.parseInt(idString, 16);
 		int len = Integer.parseInt(lenString, 16);
 		String data_16 = command.substring(5, 5+len*2);
-		String timeString = command.substring(5+len*2);
+		String timeString = command.substring(5+len*2,9+len*2);
 		String data_2 = "";
 		for(int i=0;i<len*2;i++)
 		{
@@ -81,14 +81,14 @@ public class CANTool {
 			returnTheInfo(1,"OK");
 			if(time == 0)
 			{
-				System.out.println(idString+lenString+timeString);
+				System.out.println(idString+lenString+data_16);
 			}
 			else
 			{
 				Thread th = new Thread();
 				for(int i=0;i<100;i++)
 				{
-					System.out.println(idString+lenString+timeString);
+					System.out.println(idString+lenString+data_16);
 					try {
 						th.sleep(time);
 					} catch (InterruptedException e) {
@@ -109,11 +109,13 @@ public class CANTool {
 	private void sendExtendedFrame(String command) 
 	{
 		String idString = command.substring(1, 9);
+		
 		String lenString = command.substring(9, 10);
+		
 		int id = Integer.parseInt(idString, 16);
 		int len = Integer.parseInt(lenString, 16);
 		String data_16 = command.substring(10, 10+len*2);
-		String timeString = command.substring(10+len*2);
+		String timeString = command.substring(10+len*2,14+len*2);
 		String data_2 = "";
 		for(int i=0;i<len*2;i++)
 		{
@@ -125,14 +127,14 @@ public class CANTool {
 			returnTheInfo(1,"OK");
 			if(time == 0)
 			{
-				System.out.println(idString+lenString+timeString);
+				System.out.println(idString+lenString+data_16);
 			}
 			else
 			{
 				Thread th = new Thread();
 				for(int i=0;i<100;i++)
 				{
-					System.out.println(idString+lenString+timeString);
+					System.out.println(idString+lenString+data_16);
 					try {
 						th.sleep(time);
 					} catch (InterruptedException e) {
