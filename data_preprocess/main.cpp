@@ -25,7 +25,7 @@ int main()
         {
             cnt++;
             temp=cnt-1;
-            scanf("%d %s : %d %s",&m[temp].id,m[temp].message_name,
+            scanf("%d %s  %d %s",&m[temp].id,m[temp].message_name,
                   &m[temp].len,m[temp].node_name);
             m[temp].cnt=0;
         }

@@ -1,9 +1,8 @@
 13
 
-CDU_1: 856 0
-23
+CDU_1: 856 8
+22
 
-CDU 0 0 0 0.0 0.0 0.0 0.0 
 CDU_HVACOffButtonSt 0 1 0 1.0 0.0 0.0 1.0 ""
 CDU_HVACOffButtonStVD 1 1 0 1.0 0.0 0.0 1.0 ""
 CDU_HVACAutoModeButtonSt 2 1 0 1.0 0.0 0.0 1.0 ""
@@ -27,18 +26,16 @@ HVAC_PsnTempSelect 44 5 0 0.5 18.0 18.0 32.0 ""
 CDU_HVACCtrlModeSt 54 3 0 1.0 0.0 0.0 7.0 ""
 CDU_ControlSt 55 1 0 1.0 0.0 0.0 1.0 ""
 
-CDU_4: 61 0
-4
+CDU_4: 61 8
+3
 
-CDU 0 0 0 0.0 0.0 0.0 0.0 
 CDU_HVACACCfg 1 2 0 1.0 0.0 0.0 3.0 ""
 CDU_HVACAirCirCfg 3 2 0 1.0 0.0 0.0 3.0 ""
 CDU_HVACComfortCfg 5 2 0 1.0 0.0 0.0 3.0 ""
 
-CDU_NM: 1067 0
-9
+CDU_NM: 1067 8
+8
 
-CDU 0 0 0 0.0 0.0 0.0 0.0 
 CDU_NMDestAddress 7 8 0 1.0 0.0 0.0 255.0 ""
 CDU_NMAlive 8 1 0 1.0 0.0 0.0 1.0 ""
 CDU_NMRing 9 1 0 1.0 0.0 0.0 1.0 ""
@@ -48,10 +45,9 @@ CDU_NMSleepAck 13 1 0 1.0 0.0 0.0 1.0 ""
 CDU_NMWakeupOrignin 23 8 0 1.0 0.0 0.0 255.0 ""
 CDU_NMDataField 31 40 0 1.0 0.0 0.0 1.0 ""
 
-BCM_NM: 1056 0
-9
+BCM_NM: 1056 8
+8
 
-BCM 0 0 0 0.0 0.0 0.0 0.0 
 BCM_NMDestAddress 7 8 0 1.0 0.0 0.0 255.0 ""
 BCM_NMAlive 8 1 0 1.0 0.0 0.0 1.0 ""
 BCM_NMRing 9 1 0 1.0 0.0 0.0 1.0 ""
@@ -61,23 +57,20 @@ BCM_NMSleepAck 13 1 0 1.0 0.0 0.0 1.0 ""
 BCM_NMWakeupOrignin 23 8 0 1.0 0.0 0.0 255.0 ""
 BCM_NMDataField 31 40 0 1.0 0.0 0.0 1.0 ""
 
-BCM_BCAN_1: 792 0
-2
+BCM_BCAN_1: 792 8
+1
 
-BCM 0 0 0 0.0 0.0 0.0 0.0 
 BCM_KeySt 1 2 0 1.0 0.0 1.0 3.0 ""
 
-BCM_ESC_2: 837 0
-3
+BCM_ESC_2: 837 8
+2
 
-BCM 0 0 0 0.0 0.0 0.0 0.0 
 ESC_VehSpdVD 37 1 0 1.0 0.0 0.0 1.0 ""
 ESC_VehSpd 36 13 0 0.1 0.0 0.0 240.0 ""
 
-BCM_VCU_2: 915 0
-7
+BCM_VCU_2: 915 8
+6
 
-BCM 0 0 0 0.0 0.0 0.0 0.0 
 VCU_CompressorPwrLimit 21 6 0 100.0 0.0 0.0 6000.0 "w"
 VCU_CompressorPwrLimitAct 32 1 0 1.0 0.0 0.0 1.0 ""
 VCU_PTCPwrLimit 29 6 0 100.0 0.0 0.0 6000.0 "w"
@@ -85,10 +78,9 @@ VCU_PTCrPwrLimitAct 33 1 0 1.0 0.0 0.0 1.0 ""
 VCU_AirCompressorReq 36 1 0 1.0 0.0 0.0 1.0 ""
 VCU_AirCompressorReqVD 37 1 0 1.0 0.0 0.0 1.0 ""
 
-HVAC_1: 800 0
-22
+HVAC_1: 800 8
+21
 
-HVAC 0 0 0 0.0 0.0 0.0 0.0 
 HVAC_AirCompressorSt 2 3 0 1.0 0.0 0.0 1.0 ""
 HVAC_CorrectedExterTempVD 3 1 0 1.0 0.0 0.0 1.0 ""
 HVAC_RawExterTempVD 4 1 0 1.0 0.0 0.0 1.0 ""
@@ -111,10 +103,9 @@ HVAC_IonMode 55 2 0 1.0 0.0 0.0 3.0 ""
 HVAC_WindExitSpd 59 4 0 1.0 0.0 0.0 15.0 ""
 HVAC_PsnTempSelect 48 5 0 0.5 18.0 18.0 32.0 ""
 
-HVAC_2: 801 0
-8
+HVAC_2: 801 8
+7
 
-HVAC 0 0 0 0.0 0.0 0.0 0.0 
 HVAC_RawCabinTemp 7 8 0 0.5 -40.0 -40.0 87.5 "°„C"
 HVAC_CorrectedCabinTemp 15 8 0 0.5 -40.0 -40.0 87.5 "°„C"
 HVAC_RawCabinTempVD 19 1 0 1.0 0.0 0.0 1.0 ""
@@ -123,18 +114,16 @@ HVAC_PTCPwrAct 33 10 0 10.0 0.0 0.0 8000.0 "w"
 HVAC_stPTCAct 55 3 0 1.0 0.0 0.0 1.0 ""
 HVAC_CorrectedCabinTempVD 18 1 0 1.0 0.0 0.0 1.0 ""
 
-HVAC_3: 797 0
-4
+HVAC_3: 797 8
+3
 
-HVAC 0 0 0 0.0 0.0 0.0 0.0 
 HVAC_ACCfgSt 0 1 0 1.0 0.0 0.0 1.0 ""
 HVAC_AirCirCfgSt 1 1 0 1.0 0.0 0.0 1.0 ""
 HVAC_ComfortCfgSt 3 2 0 1.0 0.0 0.0 1.0 ""
 
-HVAC_4: 864 0
-7
+HVAC_4: 864 8
+6
 
-ACP 0 0 0 0.0 0.0 0.0 0.0 
 HVAC_ACPCommandVD 0 1 0 1.0 0.0 0.0 1.0 ""
 HVAC_ACPCommand 2 2 0 1.0 0.0 0.0 3.0 ""
 HVAC_ACPSpeedSet 14 7 0 100.0 0.0 0.0 8600.0 ""
@@ -142,10 +131,9 @@ HVAC_ACPHighSidePress 21 6 0 0.5 0.0 0.0 31.0 ""
 HVAC_PTCPowerRatio 31 8 0 1.0 0.0 0.0 100.0 ""
 HVAC_Checksum 39 8 0 1.0 0.0 155.0 255.0 ""
 
-ACP_1: 867 0
-9
+ACP_1: 867 8
+8
 
-ACP 0 0 0 0.0 0.0 0.0 0.0 
 ACP_Speed 6 7 0 100.0 0.0 0.0 8600.0 ""
 ACPComsumpPwr 15 10 0 10.0 0.0 0.0 8000.0 ""
 ACP_Current 16 9 0 0.1 0.0 0.0 51.0 ""
@@ -155,10 +143,9 @@ ACP_ExtState 58 3 0 1.0 0.0 0.0 7.0 ""
 ACP_FailGrade 60 2 0 1.0 0.0 0.0 3.0 ""
 ACP_BaseState 63 3 0 1.0 0.0 0.0 7.0 ""
 
-PTC_1: 868 0
-8
+PTC_1: 868 8
+7
 
-PTC 0 0 0 0.0 0.0 0.0 0.0 
 PTC_ElementError 7 4 0 1.0 0.0 0.0 15.0 ""
 PTC_TemperatureOver 3 1 0 1.0 0.0 0.0 1.0 ""
 PTC_VoltageFault 2 1 0 1.0 0.0 0.0 1.0 ""
