@@ -9,9 +9,12 @@ import serialPort.SerialTool;
 
 public class SerialListener implements SerialPortEventListener {
     public SerialPort serialPort;
+    public String buff;
     public SerialListener(SerialPort serialPort)
     {
-    	this.serialPort=serialPort;
+    	this.serialPort = serialPort;
+    	buff = "";
+    	
     }
 	
     public void serialEvent(SerialPortEvent serialPortEvent) {
@@ -50,8 +53,9 @@ public class SerialListener implements SerialPortEventListener {
                     }
                     else {
                         data = SerialTool.readFromPort(serialPort);    //读取数据，存入字节数组
+                        
                         //System.out.println(new String(data));
-                        JOptionPane.showInputDialog(new String(data));
+                        //JOptionPane.showInputDialog(new String(data));
                         //String dataOriginal = new String(data);    //将字节数组数据转换位为保存了原始数据的字符串
                     }                        
                     
