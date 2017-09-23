@@ -15,15 +15,9 @@ public class CANTool {
 	private int state;
 	private int speed;
 	
-	public CANTool(String serialPortName)
+	public CANTool(SerialPort serialPort)
 	{
-		try {
-			SerialTool.openPort(serialPortName, 115200);
-		} catch (SerialPortParameterFailure | NotASerialPort | NoSuchPort
-				| PortInUse e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		this.serialPort = serialPort;
 		state = 0;
 		speed = 10;
 	}
