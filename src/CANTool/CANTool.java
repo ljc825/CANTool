@@ -68,8 +68,8 @@ public class CANTool {
 		String lenString = command.substring(4, 5);
 		int id = Integer.parseInt(idString, 16);
 		int len = Integer.parseInt(lenString, 16);
-		String data_16 = command.substring(5, 5+len);
-		String timeString = command.substring(5+len);
+		String data_16 = command.substring(5, 5+len*2);
+		String timeString = command.substring(5+len*2);
 		String data_2 = "";
 		for(int i=0;i<len*2;i++)
 		{
@@ -112,8 +112,8 @@ public class CANTool {
 		String lenString = command.substring(9, 10);
 		int id = Integer.parseInt(idString, 16);
 		int len = Integer.parseInt(lenString, 16);
-		String data_16 = command.substring(10, 10+len);
-		String timeString = command.substring(10+len);
+		String data_16 = command.substring(10, 10+len*2);
+		String timeString = command.substring(10+len*2);
 		String data_2 = "";
 		for(int i=0;i<len*2;i++)
 		{
