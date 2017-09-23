@@ -8,12 +8,14 @@ import serialPort.SerialTool;
 
 
 public class SerialListener implements SerialPortEventListener {
-    public SerialPort serialPort;
-    public String buff;
-    public SerialListener(SerialPort serialPort)
+    private SerialPort serialPort;
+    private String buff;
+    private CANTool tool;
+    public SerialListener(SerialPort serialPort,CANTool tool)
     {
     	this.serialPort = serialPort;
     	buff = "";
+    	this.tool = tool;
     	
     }
 	
@@ -53,7 +55,25 @@ public class SerialListener implements SerialPortEventListener {
                     }
                     else {
                         data = SerialTool.readFromPort(serialPort);    //读取数据，存入字节数组
+                        String dataString = buff + new String(data);	//与缓冲区剩余数据合并
                         
+                        String[] elements = null;
+                        elements = dataString.split("\r");
+                        int len = elements.length;
+                        if(dataString.charAt(dataString.length()-1)!='\r')
+                        {
+                        	buff = elements[len-1];
+                        	len--;
+                        }
+                        else
+                        {
+                        	buff = "";
+                        }
+                        for(int i=0;i<len;i++)
+                        {
+                        	elements[i] = elements[i] + "\r";
+                        	tool.readCommand(elements[i]);
+                        }
                         //System.out.println(new String(data));
                         //JOptionPane.showInputDialog(new String(data));
                         //String dataOriginal = new String(data);    //将字节数组数据转换位为保存了原始数据的字符串
