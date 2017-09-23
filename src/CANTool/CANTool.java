@@ -64,6 +64,10 @@ public class CANTool {
 	
 	private void sendStandardFrame(String command) 
 	{
+		if(state == 0)
+		{
+			returnTheInfo(0,"");
+		}
 		String idString = command.substring(1, 4);
 		String lenString = command.substring(4, 5);
 		int id = Integer.parseInt(idString, 16);
@@ -108,6 +112,10 @@ public class CANTool {
 
 	private void sendExtendedFrame(String command) 
 	{
+		if(state == 0)
+		{
+			returnTheInfo(0,"");
+		}
 		String idString = command.substring(1, 9);
 		
 		String lenString = command.substring(9, 10);
