@@ -80,7 +80,7 @@ public class CANTool {
 			data_2 = data_2 + Integer.toBinaryString(Integer.parseInt(data_16.substring(i,i+1), 16));
 		}
 		int time = Integer.parseInt(timeString, 16);
-		if(true)
+		if(CheckFormat.check(id,Long.parseLong(data_16,16)))
 		{
 			returnTheInfo(1,"OK");
 			if(time == 0)
@@ -130,7 +130,7 @@ public class CANTool {
 			data_2 = data_2 + Integer.toBinaryString(Integer.parseInt(data_16.substring(i,i+1), 16));
 		}
 		int time = Integer.parseInt(timeString, 16);
-		if(true)
+		if(CheckFormat.check(id,Long.parseLong(data_16,16)))
 		{
 			returnTheInfo(1,"OK");
 			if(time == 0)
