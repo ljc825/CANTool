@@ -23,39 +23,39 @@ public class SerialListener implements SerialPortEventListener {
         
         switch (serialPortEvent.getEventType()) {
 
-            case SerialPortEvent.BI: // 10 Í¨Ñ¶ÖĞ¶Ï
-            	System.out.println("Óë´®¿ÚÉè±¸Í¨Ñ¶ÖĞ¶Ï");
+            case SerialPortEvent.BI: // 10 é€šè®¯ä¸­æ–­
+            	System.out.println("ä¸ä¸²å£è®¾å¤‡é€šè®¯ä¸­æ–­");
                 break;
 
-            case SerialPortEvent.OE: // 7 ÒçÎ»£¨Òç³ö£©´íÎó
+            case SerialPortEvent.OE: // 7 æº¢ä½ï¼ˆæº¢å‡ºï¼‰é”™è¯¯
 
-            case SerialPortEvent.FE: // 9 Ö¡´íÎó
+            case SerialPortEvent.FE: // 9 å¸§é”™è¯¯
 
-            case SerialPortEvent.PE: // 8 ÆæÅ¼Ğ£Ñé´íÎó
+            case SerialPortEvent.PE: // 8 å¥‡å¶æ ¡éªŒé”™è¯¯
 
-            case SerialPortEvent.CD: // 6 ÔØ²¨¼ì²â
+            case SerialPortEvent.CD: // 6 è½½æ³¢æ£€æµ‹
 
-            case SerialPortEvent.CTS: // 3 Çå³ı´ı·¢ËÍÊı¾İ
+            case SerialPortEvent.CTS: // 3 æ¸…é™¤å¾…å‘é€æ•°æ®
 
-            case SerialPortEvent.DSR: // 4 ´ı·¢ËÍÊı¾İ×¼±¸ºÃÁË
+            case SerialPortEvent.DSR: // 4 å¾…å‘é€æ•°æ®å‡†å¤‡å¥½äº†
 
-            case SerialPortEvent.RI: // 5 ÕñÁåÖ¸Ê¾
+            case SerialPortEvent.RI: // 5 æŒ¯é“ƒæŒ‡ç¤º
 
-            case SerialPortEvent.OUTPUT_BUFFER_EMPTY: // 2 Êä³ö»º³åÇøÒÑÇå¿Õ
+            case SerialPortEvent.OUTPUT_BUFFER_EMPTY: // 2 è¾“å‡ºç¼“å†²åŒºå·²æ¸…ç©º
                 break;
             
-            case SerialPortEvent.DATA_AVAILABLE: // 1 ´®¿Ú´æÔÚ¿ÉÓÃÊı¾İ
+            case SerialPortEvent.DATA_AVAILABLE: // 1 ä¸²å£å­˜åœ¨å¯ç”¨æ•°æ®
                 
                 //System.out.println("found data");
                 byte[] data = null;
                 
                 try {
                     if (serialPort == null) {
-                    	System.out.println("´®¿Ú¶ÔÏóÎª¿Õ£¡¼àÌıÊ§°Ü");
+                    	System.out.println("ä¸²å£å¯¹è±¡ä¸ºç©ºï¼ç›‘å¬å¤±è´¥");
                     }
                     else {
-                        data = SerialTool.readFromPort(serialPort);    //¶ÁÈ¡Êı¾İ£¬´æÈë×Ö½ÚÊı×é
-                        String dataString = buff + new String(data);	//Óë»º³åÇøÊ£ÓàÊı¾İºÏ²¢
+                        data = SerialTool.readFromPort(serialPort);    //è¯»å–æ•°æ®ï¼Œå­˜å…¥å­—èŠ‚æ•°ç»„
+                        String dataString = buff + new String(data);	//ä¸ç¼“å†²åŒºå‰©ä½™æ•°æ®åˆå¹¶
                         
                         String[] elements = null;
                         elements = dataString.split("\r");
@@ -76,7 +76,7 @@ public class SerialListener implements SerialPortEventListener {
                         }
                         //System.out.println(new String(data));
                         //JOptionPane.showInputDialog(new String(data));
-                        //String dataOriginal = new String(data);    //½«×Ö½ÚÊı×éÊı¾İ×ª»»Î»Îª±£´æÁËÔ­Ê¼Êı¾İµÄ×Ö·û´®
+                        //String dataOriginal = new String(data);    //å°†å­—èŠ‚æ•°ç»„æ•°æ®è½¬æ¢ä½ä¸ºä¿å­˜äº†åŸå§‹æ•°æ®çš„å­—ç¬¦ä¸²
                     }                        
                     
                 } catch (Exception e) {
