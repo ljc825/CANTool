@@ -5,4 +5,4 @@ CANTool模拟装置的具体功能需求如下：
 2、能够解析来自CANTooApp的信息
 3、能够将CAN总线发送来的信息实时传递给CANToolApp
 4、能够判断发自CANToolApp的CAN信息的格式是否正确
-5
+5、完成相关的单元测试代码
