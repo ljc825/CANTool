@@ -1,0 +1,252 @@
+BO_ 856 CDU_1: 8 CDU
+ SG_ CDU_HVACOffButtonSt : 0|1@0+ (1,0) [0|1] ""  HVAC
+ SG_ CDU_HVACOffButtonStVD : 1|1@0+ (1,0) [0|1] ""  HVAC
+ SG_ CDU_HVACAutoModeButtonSt : 2|1@0+ (1,0) [0|1] ""  HVAC
+ SG_ CDU_HVACAutoModeButtonStVD : 3|1@0+ (1,0) [0|1] ""  HVAC
+ SG_ CDU_HVACFDefrostButtonSt : 6|1@0+ (1,0) [0|1] ""  HVAC
+ SG_ CDU_HVACFDefrostButtonStVD : 7|1@0+ (1,0) [0|1] ""  HVAC
+ SG_ CDU_HVACDualButtonSt : 10|1@0+ (1,0) [0|1] ""  HVAC
+ SG_ CDU_HVACDualButtonStVD : 11|1@0+ (1,0) [0|1] ""  HVAC
+ SG_ CDU_HVACIonButtonSt : 12|1@0+ (1,0) [0|1] ""  HVAC
+ SG_ CDU_HVACIonButtonStVD : 13|1@0+ (1,0) [0|1] ""  HVAC
+ SG_ CDU_HVACCirculationButtonSt : 18|1@0+ (1,0) [0|1] ""  HVAC
+ SG_ CDU_HVACCirculationButtonStVD : 19|1@0+ (1,0) [0|1] ""  HVAC
+ SG_ CDU_HVACACButtonSt : 20|1@0+ (1,0) [0|1] ""  HVAC
+ SG_ CDU_HVACACButtonStVD : 21|1@0+ (1,0) [0|1] ""  HVAC
+ SG_ CDU_HVACACMaxButtonSt : 22|1@0+ (1,0) [0|1] ""  HVAC
+ SG_ CDU_HVACACMaxButtonStVD : 23|1@0+ (1,0) [0|1] ""  HVAC
+ SG_ CDU_HVACModeButtonSt : 26|3@0+ (1,0) [0|7] ""  HVAC
+ SG_ HVAC_WindExitSpd : 30|4@0+ (1,0) [0|15] ""   Vector__XXX
+ SG_ CDU_HVAC_DriverTempSelect : 36|5@0+ (0.5,18) [18|32] "°„C"   Vector__XXX
+ SG_ HVAC_PsnTempSelect : 44|5@0+ (0.5,18) [18|32] ""   Vector__XXX
+ SG_ CDU_HVACCtrlModeSt : 54|3@0+ (1,0) [0|7] ""  HVAC
+ SG_ CDU_ControlSt : 55|1@0+ (1,0) [0|1] ""  HVAC
+
+BO_ 61 CDU_4: 8 CDU
+ SG_ CDU_HVACACCfg : 1|2@0+ (1,0) [0|3] ""  HVAC
+ SG_ CDU_HVACAirCirCfg : 3|2@0+ (1,0) [0|3] ""  HVAC
+ SG_ CDU_HVACComfortCfg : 5|2@0+ (1,0) [0|3] ""  HVAC
+
+BO_ 1067 CDU_NM: 8 CDU
+ SG_ CDU_NMDestAddress : 7|8@0+ (1,0) [0|255] ""  BCM,PEPS,ICM,CDU
+ SG_ CDU_NMAlive : 8|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+ SG_ CDU_NMRing : 9|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+ SG_ CDU_NMLimpHome : 10|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+ SG_ CDU_NMSleepInd : 12|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+ SG_ CDU_NMSleepAck : 13|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+ SG_ CDU_NMWakeupOrignin : 23|8@0+ (1,0) [0|255] ""  BCM,PEPS,ICM,CDU
+ SG_ CDU_NMDataField : 31|40@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+
+BO_ 1056 BCM_NM: 8 BCM
+ SG_ BCM_NMDestAddress : 7|8@0+ (1,0) [0|255] ""  BCM,PEPS,ICM,CDU
+ SG_ BCM_NMAlive : 8|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+ SG_ BCM_NMRing : 9|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+ SG_ BCM_NMLimpHome : 10|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+ SG_ BCM_NMSleepInd : 12|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+ SG_ BCM_NMSleepAck : 13|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+ SG_ BCM_NMWakeupOrignin : 23|8@0+ (1,0) [0|255] ""  BCM,PEPS,ICM,CDU
+ SG_ BCM_NMDataField : 31|40@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+
+BO_ 792 BCM_BCAN_1: 8 BCM
+ SG_ BCM_KeySt : 1|2@0+ (1,0) [1|3] ""  PEPS,ICM,AVM,CDU,HVAC
+
+BO_ 837 BCM_ESC_2: 8 BCM
+ SG_ ESC_VehSpdVD : 37|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,AVM,CDU
+ SG_ ESC_VehSpd : 36|13@0+ (0.05625,0) [0|240] ""  BCM,PEPS,ICM,AVM,CDU
+
+BO_ 915 BCM_VCU_2: 8 BCM
+ SG_ VCU_CompressorPwrLimit : 21|6@0+ (100,0) [0|6000] "w"  HVAC
+ SG_ VCU_CompressorPwrLimitAct : 32|1@0+ (1,0) [0|1] ""  HVAC
+ SG_ VCU_PTCPwrLimit : 29|6@0+ (100,0) [0|6000] "w"  HVAC
+ SG_ VCU_PTCrPwrLimitAct : 33|1@0+ (1,0) [0|1] ""  HVAC
+ SG_ VCU_AirCompressorReq : 36|1@0+ (1,0) [0|1] ""  HVAC
+ SG_ VCU_AirCompressorReqVD : 37|1@0+ (1,0) [0|1] ""  HVAC
+
+BO_ 800 HVAC_1: 8 HVAC
+ SG_ HVAC_AirCompressorSt : 2|3@0+ (1,0) [0|1] ""  CDU
+ SG_ HVAC_CorrectedExterTempVD : 3|1@0+ (1,0) [0|1] ""  BCM,CDU
+ SG_ HVAC_RawExterTempVD : 4|1@0+ (1,0) [0|1] ""  CDU
+ SG_ HVAC_EngIdleStopProhibitReq : 5|1@0+ (1,0) [0|1] ""  CDU
+ SG_ HVAC_ACSt : 6|1@0+ (1,0) [0|1] ""  CDU
+ SG_ HVAC_ACmaxSt : 7|1@0+ (1,0) [0|1] ""  CDU
+ SG_ HVAC_CorrectedExterTemp : 15|8@0+ (0.5,-40) [-40|87.5] "°„C"  BCM,CDU
+ SG_ HVAC_RawExterTemp : 23|8@0+ (0.5,-40) [-40|87.5] "°„C"  CDU
+ SG_ HVAC_TempSelect : 28|5@0+ (0.5,18) [18|32] "°„C"  CDU
+ SG_ HVAC_DualSt : 29|1@0+ (1,0) [0|1] ""  CDU
+ SG_ HVAC_AutoSt : 30|1@0+ (1,0) [0|1] ""  CDU
+ SG_ HVAC_Type : 31|1@0+ (1,0) [0|1] ""  CDU
+ SG_ HVAC_WindExitMode : 34|3@0+ (1,0) [0|7] ""  CDU
+ SG_ HVAC_SpdFanReq : 36|2@0+ (1,0) [0|1] ""  CDU
+ SG_ HVAC_TelematicsSt : 42|3@0+ (1,0) [0|7] ""  CDU
+ SG_ HVAC_AirCirculationSt : 46|2@0+ (1,0) [0|3] ""  CDU
+ SG_ HVAC_PopUpDisplayReq : 47|1@0+ (1,0) [0|1] ""  CDU
+ SG_ HVAC_DriverTempSelect : 53|5@0+ (0.5,18) [18|32] "°„C"  CDU
+ SG_ HVAC_IonMode : 55|2@0+ (1,0) [0|3] ""  CDU
+ SG_ HVAC_WindExitSpd : 59|4@0+ (1,0) [0|15] ""  CDU
+ SG_ HVAC_PsnTempSelect : 48|5@0+ (0.5,18) [18|32] ""  CDU
+
+BO_ 801 HVAC_2: 8 HVAC
+ SG_ HVAC_RawCabinTemp : 7|8@0+ (0.5,-40) [-40|87.5] "°„C"  CDU
+ SG_ HVAC_CorrectedCabinTemp : 15|8@0+ (0.5,-40) [-40|87.5] "°„C"  CDU
+ SG_ HVAC_RawCabinTempVD : 19|1@0+ (1,0) [0|1] ""  CDU
+ SG_ HVAC_CompressorComsumpPwr : 17|10@0+ (10,0) [0|8000] "w"  BCM
+ SG_ HVAC_PTCPwrAct : 33|10@0+ (10,0) [0|8000] "w"  BCM
+ SG_ HVAC_stPTCAct : 55|3@0+ (1,0) [0|1] ""  BCM
+ SG_ HVAC_CorrectedCabinTempVD : 18|1@0+ (1,0) [0|1] ""  CDU
+
+BO_ 797 HVAC_3: 8 HVAC
+ SG_ HVAC_ACCfgSt : 0|1@0+ (1,0) [0|1] ""  CDU
+ SG_ HVAC_AirCirCfgSt : 1|1@0+ (1,0) [0|1] ""  CDU
+ SG_ HVAC_ComfortCfgSt : 3|2@0+ (1,0) [0|1] ""  CDU
+
+BO_ 864 HVAC_4: 8 ACP
+ SG_ HVAC_ACPCommandVD : 0|1@0+ (1,0) [0|1] ""  ACP
+ SG_ HVAC_ACPCommand : 2|2@0+ (1,0) [0|3] ""  ACP
+ SG_ HVAC_ACPSpeedSet : 14|7@0+ (100,0) [0|8600] ""  ACP
+ SG_ HVAC_ACPHighSidePress : 21|6@0+ (0.5,0) [0|31] ""  ACP
+ SG_ HVAC_PTCPowerRatio : 31|8@0+ (1,0) [0|100] ""  PTC
+ SG_ HVAC_Checksum : 39|8@0+ (1,0) [155|255] ""  PTC
+
+BO_ 867 ACP_1: 8 ACP
+ SG_ ACP_Speed : 6|7@0+ (100,0) [0|8600] ""  HVAC
+ SG_ ACPComsumpPwr : 15|10@0+ (10,0) [0|8000] ""  HVAC
+ SG_ ACP_Current : 16|9@0+ (0.1,0) [0|51] ""  HVAC
+ SG_ ACP_MotorTemp : 39|8@0+ (1,-40) [-40|140] ""  HVAC
+ SG_ ACP_HearBeat : 55|4@0+ (1,0) [0|15] ""  HVAC
+ SG_ ACP_ExtState : 58|3@0+ (1,0) [0|7] ""  HVAC
+ SG_ ACP_FailGrade : 60|2@0+ (1,0) [0|3] ""  HVAC
+ SG_ ACP_BaseState : 63|3@0+ (1,0) [0|7] ""  HVAC
+
+BO_ 868 PTC_1: 8 PTC
+ SG_ PTC_ElementError : 7|4@0+ (1,0) [0|15] ""  HVAC
+ SG_ PTC_TemperatureOver : 3|1@0+ (1,0) [0|1] ""  HVAC
+ SG_ PTC_VoltageFault : 2|1@0+ (1,0) [0|1] ""  HVAC
+ SG_ PTC_InternalError : 1|2@0+ (1,0) [0|3] ""  HVAC
+ SG_ PTC_Current : 15|8@0+ (0.2,0) [0|25.4] "A"  HVAC
+ SG_ PTCPwrAct : 23|10@0+ (10,0) [0|8000] "w"  HVAC
+ SG_ PTCActst : 26|3@0+ (1,0) [0|7] ""  HVAC
+
+
+BO_ 1541 TP_Dashboard: 6 Dashboard
+ SG_ data : 0|48@1+ (1,0) [0|0] ""  Console
+
+BO_ 1792 Diag_Request: 8 Vector__XXX
+
+BO_ 1536 Diag_Response: 8 Vector__XXX
+
+BO_ 1537 DiagResponse_Motor: 8 Gateway
+ SG_ data : 0|64@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1543 DiagResponse_DoorLeft: 8 DOOR_le
+ SG_ data : 0|64@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1542 DiagRequest: 8 Vector__XXX
+ SG_ data : 0|64@1+ (1,0) [0|0] ""  DOOR_le
+
+BO_ 1540 TP_Console: 6 Console
+ SG_ data : 0|48@1+ (1,0) [0|0] ""  Dashboard
+
+BO_ 1053 NM_Gateway: 4 Gateway
+ SG_ SleepInd : 12|1@1+ (1,0) [0|0] ""  Gateway,DOOR_ri,DOOR_le
+
+BO_ 1052 NM_DOORright: 4 DOOR_ri
+ SG_ SleepInd : 12|1@1+ (1,0) [0|0] ""  Gateway,DOOR_le
+
+BO_ 1051 NM_DOORleft: 4 DOOR_le
+ SG_ SleepInd : 12|1@1+ (1,0) [0|0] ""  Gateway,DOOR_ri
+
+BO_ 1050 NM_Console: 4 Console
+ SG_ SleepInd : 12|1@1+ (1,0) [0|0] ""  Console,Gateway,DOOR_ri,DOOR_le
+
+BO_ 497 DOOR_r: 1 DOOR_ri
+ SG_ WN_Position : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 496 DOOR_l: 1 DOOR_le
+ SG_ WN_Position : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 417 Console_2: 2 Console
+ SG_ Phase : 8|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Active : 1|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Light : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 416 Console_1: 4 Console
+ SG_ WN_right_up : 30|1@1+ (1,0) [0|0] ""  DOOR_ri
+ SG_ WN_right_down : 29|1@1+ (1,0) [0|0] ""  DOOR_ri
+ SG_ WN_left_up : 26|1@1+ (1,0) [0|0] ""  DOOR_le
+ SG_ WN_left_down : 25|1@1+ (1,0) [0|0] ""  DOOR_le
+ SG_ Mirror_r2d : 7|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Mirror_r2u : 6|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Mirror_r2r : 5|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Mirror_r2l : 4|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Mirror_l2d : 3|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Mirror_l2u : 2|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Mirror_l2r : 1|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Mirror_l2l : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 273 Gateway_2: 8 Gateway
+ SG_ Voltage : 48|10@1+ (0.1,0) [0|102.3] "V" Vector__XXX
+ SG_ PetrolLevel : 40|8@1+ (1,0) [0|0] ""  Dashboard
+ SG_ EngSpeed : 24|16@1+ (1,0) [0|0] ""  Dashboard
+ SG_ CarSpeed : 8|16@1+ (0.5,0) [0|300] ""  Dashboard
+ SG_ EngineTemp : 0|8@1+ (1,0) [0|0] ""  Dashboard
+
+BO_ 272 Gateway_1: 3 Gateway
+ SG_ Gear : 8|4@1- (1,0) [0|0] ""  Dashboard
+ SG_ EngineRunning : 7|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Ig_15 : 2|1@1+ (1,0) [0|0] ""  Dashboard,Console
+ SG_ Ig_15R : 1|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ StarterKey : 0|1@1+ (1,0) [0|1] ""  Dashboard
+
+BO_ 256 DebugMsg1: 8 Vector__XXX
+ SG_ Data4 : 48|16@1- (1,0) [0|0] ""  Gateway
+ SG_ Data3 : 32|16@1- (1,0) [0|0] ""  Gateway
+ SG_ Data2 : 16|16@1- (1,0) [0|0] ""  Gateway
+ SG_ Data1 : 0|16@1- (1,0) [0|0] ""  Gateway
+
+
+BO_ 512 Diag_Request: 8 Vector__XXX
+
+BO_ 1024 Diag_Response: 8 Vector__XXX
+
+BO_ 103 Ignition_Info: 2 Gateway
+ SG_ StarterKey : 0|1@1+ (1,0) [0|1] ""  Engine
+
+BO_ 1544 DiagResponse_Motor: 8 Engine
+
+BO_ 1537 DiagRequest_Motor: 8 Gateway
+
+BO_ 1307 NM_Engine: 4 Engine
+ SG_ SleepInd : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1306 NM_Gateway_PowerTrain: 4 Gateway
+ SG_ SleepInd : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1020 GearBoxInfo: 1 Engine
+ SG_ EcoMode : 6|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ShiftRequest : 3|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Gear : 0|3@1+ (1,0) [0|5] ""  Gateway
+
+BO_ 101 EngineStatus: 1 Engine
+ SG_ ErrorCode : 2|6@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Status : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 102 EngineDataIEEE: 8 Engine
+ SG_ EngSpeed : 0|32@1- (1,0) [0|8000] "rpm" Vector__XXX
+ SG_ EngForce : 32|32@1- (1,0) [0|0] "N" Vector__XXX
+
+BO_ 100 EngineData: 8 Engine
+ SG_ PetrolLevel : 24|8@1+ (1,0) [0|255] "l" Vector__XXX
+ SG_ EngPower : 48|16@1+ (0.01,0) [0|150] "kW" Vector__XXX
+ SG_ EngForce : 32|16@1+ (1,0) [0|0] "N" Vector__XXX
+ SG_ IdleRunning : 23|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ EngTemp : 16|7@1+ (2,-50) [-50|150] "degC" Vector__XXX
+ SG_ EngSpeed : 0|16@1+ (1,0) [0|8000] "rpm" Vector__XXX
+
+BO_ 201 ABSdata: 6 Engine
+ SG_ AccelarationForce : 32|16@1+ (1,-10000) [0|0] "N" Vector__XXX
+ SG_ Diagnostics : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ GearLock : 15|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CarSpeed : 0|10@1+ (0.5,0) [0|300] "mph" Vector__XXX
+
+
+

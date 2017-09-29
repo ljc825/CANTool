@@ -1,0 +1,336 @@
+43
+
+CDU_1: 856 8
+22
+
+CDU_HVACOffButtonSt 0 1 0 1.0 0.0 0.0 1.0 ""
+CDU_HVACOffButtonStVD 1 1 0 1.0 0.0 0.0 1.0 ""
+CDU_HVACAutoModeButtonSt 2 1 0 1.0 0.0 0.0 1.0 ""
+CDU_HVACAutoModeButtonStVD 3 1 0 1.0 0.0 0.0 1.0 ""
+CDU_HVACFDefrostButtonSt 6 1 0 1.0 0.0 0.0 1.0 ""
+CDU_HVACFDefrostButtonStVD 7 1 0 1.0 0.0 0.0 1.0 ""
+CDU_HVACDualButtonSt 10 1 0 1.0 0.0 0.0 1.0 ""
+CDU_HVACDualButtonStVD 11 1 0 1.0 0.0 0.0 1.0 ""
+CDU_HVACIonButtonSt 12 1 0 1.0 0.0 0.0 1.0 ""
+CDU_HVACIonButtonStVD 13 1 0 1.0 0.0 0.0 1.0 ""
+CDU_HVACCirculationButtonSt 18 1 0 1.0 0.0 0.0 1.0 ""
+CDU_HVACCirculationButtonStVD 19 1 0 1.0 0.0 0.0 1.0 ""
+CDU_HVACACButtonSt 20 1 0 1.0 0.0 0.0 1.0 ""
+CDU_HVACACButtonStVD 21 1 0 1.0 0.0 0.0 1.0 ""
+CDU_HVACACMaxButtonSt 22 1 0 1.0 0.0 0.0 1.0 ""
+CDU_HVACACMaxButtonStVD 23 1 0 1.0 0.0 0.0 1.0 ""
+CDU_HVACModeButtonSt 26 3 0 1.0 0.0 0.0 7.0 ""
+HVAC_WindExitSpd 30 4 0 1.0 0.0 0.0 15.0 ""
+CDU_HVAC_DriverTempSelect 36 5 0 0.5 18.0 18.0 32.0 "°„C"
+HVAC_PsnTempSelect 44 5 0 0.5 18.0 18.0 32.0 ""
+CDU_HVACCtrlModeSt 54 3 0 1.0 0.0 0.0 7.0 ""
+CDU_ControlSt 55 1 0 1.0 0.0 0.0 1.0 ""
+
+CDU_4: 61 8
+3
+
+CDU_HVACACCfg 1 2 0 1.0 0.0 0.0 3.0 ""
+CDU_HVACAirCirCfg 3 2 0 1.0 0.0 0.0 3.0 ""
+CDU_HVACComfortCfg 5 2 0 1.0 0.0 0.0 3.0 ""
+
+CDU_NM: 1067 8
+8
+
+CDU_NMDestAddress 7 8 0 1.0 0.0 0.0 255.0 ""
+CDU_NMAlive 8 1 0 1.0 0.0 0.0 1.0 ""
+CDU_NMRing 9 1 0 1.0 0.0 0.0 1.0 ""
+CDU_NMLimpHome 10 1 0 1.0 0.0 0.0 1.0 ""
+CDU_NMSleepInd 12 1 0 1.0 0.0 0.0 1.0 ""
+CDU_NMSleepAck 13 1 0 1.0 0.0 0.0 1.0 ""
+CDU_NMWakeupOrignin 23 8 0 1.0 0.0 0.0 255.0 ""
+CDU_NMDataField 31 40 0 1.0 0.0 0.0 1.0 ""
+
+BCM_NM: 1056 8
+8
+
+BCM_NMDestAddress 7 8 0 1.0 0.0 0.0 255.0 ""
+BCM_NMAlive 8 1 0 1.0 0.0 0.0 1.0 ""
+BCM_NMRing 9 1 0 1.0 0.0 0.0 1.0 ""
+BCM_NMLimpHome 10 1 0 1.0 0.0 0.0 1.0 ""
+BCM_NMSleepInd 12 1 0 1.0 0.0 0.0 1.0 ""
+BCM_NMSleepAck 13 1 0 1.0 0.0 0.0 1.0 ""
+BCM_NMWakeupOrignin 23 8 0 1.0 0.0 0.0 255.0 ""
+BCM_NMDataField 31 40 0 1.0 0.0 0.0 1.0 ""
+
+BCM_BCAN_1: 792 8
+1
+
+BCM_KeySt 1 2 0 1.0 0.0 1.0 3.0 ""
+
+BCM_ESC_2: 837 8
+2
+
+ESC_VehSpdVD 37 1 0 1.0 0.0 0.0 1.0 ""
+ESC_VehSpd 36 13 0 0.1 0.0 0.0 240.0 ""
+
+BCM_VCU_2: 915 8
+6
+
+VCU_CompressorPwrLimit 21 6 0 100.0 0.0 0.0 6000.0 "w"
+VCU_CompressorPwrLimitAct 32 1 0 1.0 0.0 0.0 1.0 ""
+VCU_PTCPwrLimit 29 6 0 100.0 0.0 0.0 6000.0 "w"
+VCU_PTCrPwrLimitAct 33 1 0 1.0 0.0 0.0 1.0 ""
+VCU_AirCompressorReq 36 1 0 1.0 0.0 0.0 1.0 ""
+VCU_AirCompressorReqVD 37 1 0 1.0 0.0 0.0 1.0 ""
+
+HVAC_1: 800 8
+21
+
+HVAC_AirCompressorSt 2 3 0 1.0 0.0 0.0 1.0 ""
+HVAC_CorrectedExterTempVD 3 1 0 1.0 0.0 0.0 1.0 ""
+HVAC_RawExterTempVD 4 1 0 1.0 0.0 0.0 1.0 ""
+HVAC_EngIdleStopProhibitReq 5 1 0 1.0 0.0 0.0 1.0 ""
+HVAC_ACSt 6 1 0 1.0 0.0 0.0 1.0 ""
+HVAC_ACmaxSt 7 1 0 1.0 0.0 0.0 1.0 ""
+HVAC_CorrectedExterTemp 15 8 0 0.5 -40.0 -40.0 87.5 "°„C"
+HVAC_RawExterTemp 23 8 0 0.5 -40.0 -40.0 87.5 "°„C"
+HVAC_TempSelect 28 5 0 0.5 18.0 18.0 32.0 "°„C"
+HVAC_DualSt 29 1 0 1.0 0.0 0.0 1.0 ""
+HVAC_AutoSt 30 1 0 1.0 0.0 0.0 1.0 ""
+HVAC_Type 31 1 0 1.0 0.0 0.0 1.0 ""
+HVAC_WindExitMode 34 3 0 1.0 0.0 0.0 7.0 ""
+HVAC_SpdFanReq 36 2 0 1.0 0.0 0.0 1.0 ""
+HVAC_TelematicsSt 42 3 0 1.0 0.0 0.0 7.0 ""
+HVAC_AirCirculationSt 46 2 0 1.0 0.0 0.0 3.0 ""
+HVAC_PopUpDisplayReq 47 1 0 1.0 0.0 0.0 1.0 ""
+HVAC_DriverTempSelect 53 5 0 0.5 18.0 18.0 32.0 "°„C"
+HVAC_IonMode 55 2 0 1.0 0.0 0.0 3.0 ""
+HVAC_WindExitSpd 59 4 0 1.0 0.0 0.0 15.0 ""
+HVAC_PsnTempSelect 48 5 0 0.5 18.0 18.0 32.0 ""
+
+HVAC_2: 801 8
+7
+
+HVAC_RawCabinTemp 7 8 0 0.5 -40.0 -40.0 87.5 "°„C"
+HVAC_CorrectedCabinTemp 15 8 0 0.5 -40.0 -40.0 87.5 "°„C"
+HVAC_RawCabinTempVD 19 1 0 1.0 0.0 0.0 1.0 ""
+HVAC_CompressorComsumpPwr 17 10 0 10.0 0.0 0.0 8000.0 "w"
+HVAC_PTCPwrAct 33 10 0 10.0 0.0 0.0 8000.0 "w"
+HVAC_stPTCAct 55 3 0 1.0 0.0 0.0 1.0 ""
+HVAC_CorrectedCabinTempVD 18 1 0 1.0 0.0 0.0 1.0 ""
+
+HVAC_3: 797 8
+3
+
+HVAC_ACCfgSt 0 1 0 1.0 0.0 0.0 1.0 ""
+HVAC_AirCirCfgSt 1 1 0 1.0 0.0 0.0 1.0 ""
+HVAC_ComfortCfgSt 3 2 0 1.0 0.0 0.0 1.0 ""
+
+HVAC_4: 864 8
+6
+
+HVAC_ACPCommandVD 0 1 0 1.0 0.0 0.0 1.0 ""
+HVAC_ACPCommand 2 2 0 1.0 0.0 0.0 3.0 ""
+HVAC_ACPSpeedSet 14 7 0 100.0 0.0 0.0 8600.0 ""
+HVAC_ACPHighSidePress 21 6 0 0.5 0.0 0.0 31.0 ""
+HVAC_PTCPowerRatio 31 8 0 1.0 0.0 0.0 100.0 ""
+HVAC_Checksum 39 8 0 1.0 0.0 155.0 255.0 ""
+
+ACP_1: 867 8
+8
+
+ACP_Speed 6 7 0 100.0 0.0 0.0 8600.0 ""
+ACPComsumpPwr 15 10 0 10.0 0.0 0.0 8000.0 ""
+ACP_Current 16 9 0 0.1 0.0 0.0 51.0 ""
+ACP_MotorTemp 39 8 0 1.0 -40.0 -40.0 140.0 ""
+ACP_HearBeat 55 4 0 1.0 0.0 0.0 15.0 ""
+ACP_ExtState 58 3 0 1.0 0.0 0.0 7.0 ""
+ACP_FailGrade 60 2 0 1.0 0.0 0.0 3.0 ""
+ACP_BaseState 63 3 0 1.0 0.0 0.0 7.0 ""
+
+PTC_1: 868 8
+7
+
+PTC_ElementError 7 4 0 1.0 0.0 0.0 15.0 ""
+PTC_TemperatureOver 3 1 0 1.0 0.0 0.0 1.0 ""
+PTC_VoltageFault 2 1 0 1.0 0.0 0.0 1.0 ""
+PTC_InternalError 1 2 0 1.0 0.0 0.0 3.0 ""
+PTC_Current 15 8 0 0.2 0.0 0.0 25.4 "A"
+PTCPwrAct 23 10 0 10.0 0.0 0.0 8000.0 "w"
+PTCActst 26 3 0 1.0 0.0 0.0 7.0 ""
+
+TP_Dashboard: 1541 6
+1
+
+data 0 48 1 1.0 0.0 0.0 0.0 ""
+
+Diag_Request: 1792 8
+0
+
+
+Diag_Response: 1536 8
+0
+
+
+DiagResponse_Motor: 1537 8
+1
+
+data 0 64 1 1.0 0.0 0.0 0.0 ""
+
+DiagResponse_DoorLeft: 1543 8
+1
+
+data 0 64 1 1.0 0.0 0.0 0.0 ""
+
+DiagRequest: 1542 8
+1
+
+data 0 64 1 1.0 0.0 0.0 0.0 ""
+
+TP_Console: 1540 6
+1
+
+data 0 48 1 1.0 0.0 0.0 0.0 ""
+
+NM_Gateway: 1053 4
+1
+
+SleepInd 12 1 1 1.0 0.0 0.0 0.0 ""
+
+NM_DOORright: 1052 4
+1
+
+SleepInd 12 1 1 1.0 0.0 0.0 0.0 ""
+
+NM_DOORleft: 1051 4
+1
+
+SleepInd 12 1 1 1.0 0.0 0.0 0.0 ""
+
+NM_Console: 1050 4
+1
+
+SleepInd 12 1 1 1.0 0.0 0.0 0.0 ""
+
+DOOR_r: 497 1
+1
+
+WN_Position 0 8 1 1.0 0.0 0.0 100.0 ""
+
+DOOR_l: 496 1
+1
+
+WN_Position 0 8 1 1.0 0.0 0.0 100.0 ""
+
+Console_2: 417 2
+3
+
+Phase 8 1 1 1.0 0.0 0.0 0.0 ""
+Active 1 2 1 1.0 0.0 0.0 0.0 ""
+Light 0 1 1 1.0 0.0 0.0 1.0 ""
+
+Console_1: 416 4
+12
+
+WN_right_up 30 1 1 1.0 0.0 0.0 0.0 ""
+WN_right_down 29 1 1 1.0 0.0 0.0 0.0 ""
+WN_left_up 26 1 1 1.0 0.0 0.0 0.0 ""
+WN_left_down 25 1 1 1.0 0.0 0.0 0.0 ""
+Mirror_r2d 7 1 1 1.0 0.0 0.0 0.0 ""
+Mirror_r2u 6 1 1 1.0 0.0 0.0 0.0 ""
+Mirror_r2r 5 1 1 1.0 0.0 0.0 0.0 ""
+Mirror_r2l 4 1 1 1.0 0.0 0.0 0.0 ""
+Mirror_l2d 3 1 1 1.0 0.0 0.0 0.0 ""
+Mirror_l2u 2 1 1 1.0 0.0 0.0 0.0 ""
+Mirror_l2r 1 1 1 1.0 0.0 0.0 0.0 ""
+Mirror_l2l 0 1 1 1.0 0.0 0.0 0.0 ""
+
+Gateway_2: 273 8
+5
+
+Voltage 48 10 1 0.1 0.0 0.0 102.3 "V"
+PetrolLevel 40 8 1 1.0 0.0 0.0 0.0 ""
+EngSpeed 24 16 1 1.0 0.0 0.0 0.0 ""
+CarSpeed 8 16 1 0.5 0.0 0.0 300.0 ""
+EngineTemp 0 8 1 1.0 0.0 0.0 0.0 ""
+
+Gateway_1: 272 3
+5
+
+Gear 8 4 1 1.0 0.0 0.0 0.0 ""
+EngineRunning 7 1 1 1.0 0.0 0.0 0.0 ""
+Ig_15 2 1 1 1.0 0.0 0.0 0.0 ""
+Ig_15R 1 1 1 1.0 0.0 0.0 0.0 ""
+StarterKey 0 1 1 1.0 0.0 0.0 1.0 ""
+
+DebugMsg1: 256 8
+4
+
+Data4 48 16 1 1.0 0.0 0.0 0.0 ""
+Data3 32 16 1 1.0 0.0 0.0 0.0 ""
+Data2 16 16 1 1.0 0.0 0.0 0.0 ""
+Data1 0 16 1 1.0 0.0 0.0 0.0 ""
+
+Diag_Request: 512 8
+0
+
+
+Diag_Response: 1024 8
+0
+
+
+Ignition_Info: 103 2
+1
+
+StarterKey 0 1 1 1.0 0.0 0.0 1.0 ""
+
+DiagResponse_Motor: 1544 8
+0
+
+
+DiagRequest_Motor: 1537 8
+0
+
+
+NM_Engine: 1307 4
+1
+
+SleepInd 12 1 1 1.0 0.0 0.0 1.0 ""
+
+NM_Gateway_PowerTrain: 1306 4
+1
+
+SleepInd 12 1 1 1.0 0.0 0.0 1.0 ""
+
+GearBoxInfo: 1020 1
+3
+
+EcoMode 6 2 1 1.0 0.0 0.0 1.0 ""
+ShiftRequest 3 1 1 1.0 0.0 0.0 0.0 ""
+Gear 0 3 1 1.0 0.0 0.0 5.0 ""
+
+EngineStatus: 101 1
+2
+
+ErrorCode 2 6 1 1.0 0.0 0.0 0.0 ""
+Status 0 2 1 1.0 0.0 0.0 0.0 ""
+
+EngineDataIEEE: 102 8
+2
+
+EngSpeed 0 32 1 1.0 0.0 0.0 8000.0 "rpm"
+EngForce 32 32 1 1.0 0.0 0.0 0.0 "N"
+
+EngineData: 100 8
+6
+
+PetrolLevel 24 8 1 1.0 0.0 0.0 255.0 "l"
+EngPower 48 16 1 0.0 0.0 0.0 150.0 "kW"
+EngForce 32 16 1 1.0 0.0 0.0 0.0 "N"
+IdleRunning 23 1 1 1.0 0.0 0.0 0.0 ""
+EngTemp 16 7 1 2.0 -50.0 -50.0 150.0 "degC"
+EngSpeed 0 16 1 1.0 0.0 0.0 8000.0 "rpm"
+
+ABSdata: 201 6
+4
+
+AccelarationForce 32 16 1 1.0 -10000.0 0.0 0.0 "N"
+Diagnostics 16 8 1 1.0 0.0 0.0 0.0 ""
+GearLock 15 1 1 1.0 0.0 0.0 0.0 ""
+CarSpeed 0 10 1 0.5 0.0 0.0 300.0 "mph"
+

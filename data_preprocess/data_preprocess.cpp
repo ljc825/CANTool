@@ -17,7 +17,7 @@ char flag[32];
 //对CAN描述数据库进行调整，使数据格式能够更加便于iava语言的读入
 int main()
 {
-    freopen("canmsg-sample.dbc","r",stdin);
+    freopen("data.in","r",stdin);
     freopen("data.txt","w",stdout);
     while(scanf("%s",flag)!=EOF)
     {
@@ -31,7 +31,7 @@ int main()
         }
         else
         {
-            scanf("%s : %d|%d@%d+ (%lf,%lf) [%lf|%lf] %s %s",
+            scanf("%s : %d|%d@%d%*c (%lf,%lf) [%lf|%lf] %s %s",
                   s[total].signal_name,&s[total].start,
                   &s[total].len, &s[total].dir, &s[total].a,
                    &s[total].b, &s[total].c, &s[total].d,
