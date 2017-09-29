@@ -1,14 +1,14 @@
 #include <cstdio>
 #include<iostream>
 using namespace std;
-//瀹氫箟CAN淇″彿鐨勭粨鏋勪綋
+//定义CAN信号的结构体
 struct sign
 {
     int start,len,dir;
     double a,b,c,d;
     char signal_name[32],unit[32],node_name[32];
 };
-//瀹氫箟CAN淇℃伅鐨勭粨鏋勪綋
+//定义CAN信息的结构体
 struct message
 {
     int id,len,cnt;
@@ -22,7 +22,7 @@ char flag[32];
 
 int main()
 {
-    freopen("canmsg-sample.dbc","r",stdin);
+    freopen("data.in","r",stdin);
     freopen("data2.txt","w",stdout);
     while(scanf("%s",flag)!=EOF)
     {
@@ -36,7 +36,7 @@ int main()
         }
         else
         {
-            scanf("%s : %d|%d@%d+ (%lf,%lf) [%lf|%lf] %s %s",
+            scanf("%s : %d|%d@%d%*c (%lf,%lf) [%lf|%lf] %s %s",
                   m[temp].s[cnt1].signal_name,&m[temp].s[cnt1].start,
                   &m[temp].s[cnt1].len, &m[temp].s[cnt1].dir, &m[temp].s[cnt1].a,
                    &m[temp].s[cnt1].b, &m[temp].s[cnt1].c, &m[temp].s[cnt1].d,
@@ -53,17 +53,35 @@ int main()
         {
             pos1=m[i].s[j].start/8;
             pos2=m[i].s[j].start%8;
-            for(int k=0;k<m[i].s[j].len;k++)
+            if(m[i].s[j].dir==0)
             {
-                //cout<<pos1*8+pos2<<endl;
-                check^=((long long)1<<(pos1*8+pos2));
-                pos2--;
-                if(pos2==-1)
+                for(int k=0;k<m[i].s[j].len;k++)
                 {
-                    pos2=7;
-                    pos1++;
+                    //cout<<pos1*8+pos2<<endl;
+                    check^=((long long)1<<(pos1*8+pos2));
+                    pos2--;
+                    if(pos2==-1)
+                    {
+                        pos2=7;
+                        pos1++;
+                    }
                 }
             }
+            else
+            {
+                for(int k=0;k<m[i].s[j].len;k++)
+                {
+                    check^=((long long)1<<(pos1*8+pos2));
+                    pos2++;
+                    if(pos2==8)
+                    {
+                        pos2=0;
+                        pos1++;
+                    }
+                }
+
+            }
+
         }
         cout<<m[i].id<<" "<<check<<endl;
     }

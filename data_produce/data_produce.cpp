@@ -1,17 +1,17 @@
-ï»¿#include <cstdio>
+#include <cstdio>
 #include<stdlib.h>
 #include<time.h>
 #include<iostream>
 #define random(a)  ((double)rand()/RAND_MAX)
 using namespace std;
-//å®šä¹‰CANä¿¡å·çš„ç»“æ„ä½“
+//¶¨ÒåCANĞÅºÅµÄ½á¹¹Ìå
 struct sign
 {
     int start,len,dir;
     double a,b,c,d;
     char signal_name[32],unit[32],node_name[32];
 };
-//å®šä¹‰CANä¿¡æ¯çš„ç»“æ„ä½“
+//¶¨ÒåCANĞÅÏ¢µÄ½á¹¹Ìå
 struct message
 {
     int id,len,cnt;
@@ -22,7 +22,7 @@ struct message
 
 int cnt=0,cnt1=0,temp;
 char flag[32];
-//éšæœºç”ŸæˆCANä¿¡æ¯
+//Ëæ»úÉú³ÉCANĞÅÏ¢
 void print(int x)
 {
     if(x<10)
@@ -40,7 +40,7 @@ void Transform(unsigned long long x,int k)
 
 int main()
 {
-    freopen("canmsg-sample.dbc","r",stdin);
+    freopen("data.in","r",stdin);
     freopen("data1.txt","w",stdout);
     while(scanf("%s",flag)!=EOF)
     {
@@ -54,7 +54,7 @@ int main()
         }
         else
         {
-            scanf("%s : %d|%d@%d+ (%lf,%lf) [%lf|%lf] %s %s",
+            scanf("%s : %d|%d@%d%*c (%lf,%lf) [%lf|%lf] %s %s",
                   m[temp].s[cnt1].signal_name,&m[temp].s[cnt1].start,
                   &m[temp].s[cnt1].len, &m[temp].s[cnt1].dir, &m[temp].s[cnt1].a,
                    &m[temp].s[cnt1].b, &m[temp].s[cnt1].c, &m[temp].s[cnt1].d,
@@ -64,7 +64,7 @@ int main()
         }
     }
     srand((unsigned)time(NULL));
-    for(int i=0;i<100;i++)
+    for(int i=0;i<300;i++)
     {
         printf("t");
         int temp1=(rand()%(cnt));
@@ -83,15 +83,22 @@ int main()
                 long long temp2 = (rand()%(y-x+1))+x;
                 pos1=m[temp1].s[j].start/8;
                 pos2=m[temp1].s[j].start%8;
-                for(int k=0;k<m[temp1].s[j].len;k++)
+                if(m[temp1].s[j].dir==0)
                 {
-                    data|=((long long)((temp2>>(m[temp1].s[j].len-1-k))&1)<<(pos1*8+pos2));
-                    pos2--;
-                    if(pos2==-1)
+                    for(int k=0;k<m[temp1].s[j].len;k++)
                     {
-                        pos2=7;
-                        pos1++;
+                        data|=((long long)((temp2>>(m[temp1].s[j].len-1-k))&1)<<(pos1*8+pos2));
+                        pos2--;
+                        if(pos2==-1)
+                        {
+                            pos2=7;
+                            pos1++;
+                        }
                     }
+                }
+                else
+                {
+                    data|=(temp2<<m[temp1].s[j].start);
                 }
             }
         }
