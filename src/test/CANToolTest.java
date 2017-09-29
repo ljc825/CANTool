@@ -40,10 +40,10 @@ public class CANToolTest {
 	@Test
 	public void readCommandTest2() {
 		
-		doNothing().when(spy).returnTheInfo(1,"OK");
+		doNothing().when(spy).returnTheInfo(1,"");
 		spy.readCommand("O1\r");
 		verify(spy,times(1)).open();
-		verify(spy,times(1)).returnTheInfo(1,"OK");
+		verify(spy,times(1)).returnTheInfo(1,"");
 		
 	}
 	
@@ -55,7 +55,7 @@ public class CANToolTest {
 		spy.readCommand("O1\r");
 		spy.readCommand("O1\r");
 		verify(spy,times(2)).open();
-		verify(spy,times(1)).returnTheInfo(1,"OK");
+		verify(spy,times(1)).returnTheInfo(1,"");
 		verify(spy,times(1)).returnTheInfo(0,"");
 		
 	}
@@ -69,7 +69,7 @@ public class CANToolTest {
 		spy.readCommand("C\r");
 		verify(spy,times(1)).open();
 		verify(spy,times(1)).close();
-		verify(spy,times(2)).returnTheInfo(1,"OK");
+		verify(spy,times(2)).returnTheInfo(1,"");
 		
 	}
 	
@@ -91,7 +91,7 @@ public class CANToolTest {
 		doNothing().when(spy).returnTheInfo(anyInt(),anyString());
 		spy.readCommand("S1\r");
 		verify(spy,times(1)).changeSpeed('1');
-		verify(spy,times(1)).returnTheInfo(1,"OK");
+		verify(spy,times(1)).returnTheInfo(1,"");
 		
 	}
 	
@@ -103,7 +103,7 @@ public class CANToolTest {
 		spy.readCommand("O1r");
 		spy.readCommand("S1\r");
 		verify(spy,times(1)).changeSpeed('1');
-		verify(spy,times(1)).returnTheInfo(1,"OK");
+		verify(spy,times(1)).returnTheInfo(1,"");
 		verify(spy,times(1)).returnTheInfo(0,"");
 		
 	}
@@ -119,7 +119,7 @@ public class CANToolTest {
 		verify(spy,times(1)).changeSpeed('1');
 		verify(spy,times(1)).changeSpeed('2');
 		verify(spy,times(1)).changeSpeed('3');
-		verify(spy,times(3)).returnTheInfo(1,"OK");
+		verify(spy,times(3)).returnTheInfo(1,"");
 		
 	}
 	
@@ -132,7 +132,7 @@ public class CANToolTest {
 		spy.readCommand("t358800000000061030400000\r");
 		verify(spy,times(1)).open();
 		verify(spy,times(1)).sendStandardFrame("t358800000000061030400000\r");
-		verify(spy,times(2)).returnTheInfo(1,"OK");
+		verify(spy,times(2)).returnTheInfo(1,"");
 		//verify(spy,times(1)).returnTheInfo(0,"");
 		
 	}
@@ -146,7 +146,7 @@ public class CANToolTest {
 		spy.readCommand("t358800301513034014880010\r");
 		verify(spy,times(1)).open();
 		verify(spy,times(1)).sendStandardFrame("t358800301513034014880010\r");
-		verify(spy,times(2)).returnTheInfo(1,"OK");
+		verify(spy,times(2)).returnTheInfo(1,"");
 		//verify(spy,times(1)).returnTheInfo(0,"");
 		
 	}
@@ -160,7 +160,7 @@ public class CANToolTest {
 		spy.readCommand("t359800301513034014880010\r");
 		verify(spy,times(1)).open();
 		verify(spy,times(1)).sendStandardFrame("t359800301513034014880010\r");
-		verify(spy,times(1)).returnTheInfo(1,"OK");
+		verify(spy,times(1)).returnTheInfo(1,"");
 		verify(spy,times(1)).returnTheInfo(0,"");
 		
 	}
@@ -172,7 +172,7 @@ public class CANToolTest {
 		doNothing().when(spy).returnTheInfo(anyInt(),anyString());
 		//spy.readCommand("O1\r");
 		spy.readCommand("t359800301513034014880010\r");
-		//verify(spy,times(1)).returnTheInfo(1,"OK");
+		//verify(spy,times(1)).returnTheInfo(1,"");
 		verify(spy,times(1)).sendStandardFrame("t359800301513034014880010\r");
 		verify(spy,times(1)).returnTheInfo(0,"");
 		
@@ -187,7 +187,7 @@ public class CANToolTest {
 		spy.readCommand("T00000358800000000061030400000\r");
 		verify(spy,times(1)).open();
 		verify(spy,times(1)).sendExtendedFrame("T00000358800000000061030400000\r");
-		verify(spy,times(2)).returnTheInfo(1,"OK");
+		verify(spy,times(2)).returnTheInfo(1,"");
 		//verify(spy,times(1)).returnTheInfo(0,"");
 		
 	}
@@ -201,7 +201,7 @@ public class CANToolTest {
 		spy.readCommand("T00000358800301513034014880010\r");
 		verify(spy,times(1)).open();
 		verify(spy,times(1)).sendExtendedFrame("T00000358800301513034014880010\r");
-		verify(spy,times(2)).returnTheInfo(1,"OK");
+		verify(spy,times(2)).returnTheInfo(1,"");
 		//verify(spy,times(1)).returnTheInfo(0,"");
 		
 	}
@@ -215,7 +215,7 @@ public class CANToolTest {
 		spy.readCommand("T00000359800301513034014880010\r");
 		verify(spy,times(1)).open();
 		verify(spy,times(1)).sendExtendedFrame("T00000359800301513034014880010\r");
-		verify(spy,times(1)).returnTheInfo(1,"OK");
+		verify(spy,times(1)).returnTheInfo(1,"");
 		verify(spy,times(1)).returnTheInfo(0,"");
 		
 	}
@@ -228,7 +228,7 @@ public class CANToolTest {
 		//spy.readCommand("O1\r");
 		spy.readCommand("T00000359800301513034014880010\r");
 		verify(spy,times(1)).sendExtendedFrame("T00000359800301513034014880010\r");
-		//verify(spy,times(1)).returnTheInfo(1,"OK");
+		//verify(spy,times(1)).returnTheInfo(1,"");
 		verify(spy,times(1)).returnTheInfo(0,"");
 		
 	}

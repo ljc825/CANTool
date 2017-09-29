@@ -1,0 +1,74 @@
+11
+
+Diag_Request: 512 8
+0
+
+
+Diag_Response: 1024 8
+0
+
+
+Ignition_Info: 103 2
+1
+
+StarterKey 0 1 1 1.0 0.0 0.0 1.0 ""
+
+DiagResponse_Motor: 1544 8
+0
+
+
+DiagRequest_Motor: 1537 8
+0
+
+
+NM_Engine: 1307 4
+1
+
+SleepInd 12 1 1 1.0 0.0 0.0 1.0 ""
+
+NM_Gateway_PowerTrain: 1306 4
+1
+
+SleepInd 12 1 1 1.0 0.0 0.0 1.0 ""
+
+GearBoxInfo: 1020 1
+3
+
+EcoMode 6 2 1 1.0 0.0 0.0 1.0 ""
+ShiftRequest 3 1 1 1.0 0.0 0.0 0.0 ""
+Gear 0 3 1 1.0 0.0 0.0 5.0 ""
+
+EngineStatus: 101 1
+2
+
+ErrorCode 2 6 1 1.0 0.0 0.0 0.0 ""
+Status 0 2 1 1.0 0.0 0.0 0.0 ""
+
+EngineDataIEEE: 102 8
+16
+
+EngSpeed 0 32 1 0.0 0.0 0.0 0.0 
+(1,0) 0 0 0 0.0 0.0 0.0 0.0 
+"rpm" 0 0 0 0.0 0.0 0.0 0.0 
+SG_ 0 0 0 0.0 0.0 0.0 0.0 
+: 0 0 0 0.0 0.0 0.0 0.0 
+(1,0) 0 0 0 0.0 0.0 0.0 0.0 
+"N" 0 0 0 0.0 0.0 0.0 0.0 
+BO_ 0 0 0 0.0 0.0 0.0 0.0 
+EngineData: 0 0 0 0.0 0.0 0.0 0.0 
+Engine 0 0 0 0.0 0.0 0.0 0.0 
+PetrolLevel 24 8 1 1.0 0.0 0.0 255.0 "l"
+EngPower 48 16 1 0.0 0.0 0.0 150.0 "kW"
+EngForce 32 16 1 1.0 0.0 0.0 0.0 "N"
+IdleRunning 23 1 1 1.0 0.0 0.0 0.0 ""
+EngTemp 16 7 1 2.0 -50.0 -50.0 150.0 "degC"
+EngSpeed 0 16 1 1.0 0.0 0.0 8000.0 "rpm"
+
+ABSdata: 201 6
+4
+
+AccelarationForce 32 16 1 1.0 -10000.0 0.0 0.0 "N"
+Diagnostics 16 8 1 1.0 0.0 0.0 0.0 ""
+GearLock 15 1 1 1.0 0.0 0.0 0.0 ""
+CarSpeed 0 10 1 0.5 0.0 0.0 300.0 "mph"
+

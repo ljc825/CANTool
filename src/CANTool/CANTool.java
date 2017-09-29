@@ -83,7 +83,7 @@ public class CANTool {
 		int time = Integer.parseInt(timeString, 16);
 		if(CheckFormat.check(id,Long.parseUnsignedLong(data_16,16)))
 		{
-			returnTheInfo(1,"OK");
+			returnTheInfo(1,"");
 			if(time == 0)
 			{
 				System.out.println(idString+lenString+data_16);
@@ -134,7 +134,7 @@ public class CANTool {
 		int time = Integer.parseInt(timeString, 16);
 		if(CheckFormat.check(id,Long.parseUnsignedLong(data_16,16)))
 		{
-			returnTheInfo(1,"OK");
+			returnTheInfo(1,"");
 			if(time == 0)
 			{
 				System.out.println(idString+lenString+data_16);
@@ -175,7 +175,7 @@ public class CANTool {
 				int num[]={10,20,50,100,125,250,500,800,1000};
 				speed=num[level];
 				System.out.println(speed);
-				returnTheInfo(1,"OK");
+				returnTheInfo(1,"");
 			}
 			
 		}
@@ -191,7 +191,7 @@ public class CANTool {
 		if(state == 1)
 		{
 			state = 0;
-			returnTheInfo(1,"OK");
+			returnTheInfo(1,"");
 		}
 		else
 		{
@@ -205,7 +205,7 @@ public class CANTool {
 		if(state == 0)
 		{
 			state = 1;
-			returnTheInfo(1,"OK");
+			returnTheInfo(1,"");
 		}
 		else
 		{
