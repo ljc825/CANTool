@@ -10,7 +10,7 @@ struct sign
 {
     int start,len,dir;
     double a,b,c,d;
-    char signal_name[32],unit[32],node_name[32];
+    char signal_name[32],unit[32],node_name[32],temp;
 }s[1010];
 int cnt=0,total=0,temp;
 char flag[32];
@@ -31,13 +31,17 @@ int main()
         }
         else
         {
-            scanf("%s : %d|%d@%d%*c (%lf,%lf) [%lf|%lf] %s %s",
+            scanf("%s : %d|%d@%d%c (%lf,%lf) [%lf|%lf] %s %s",
                   s[total].signal_name,&s[total].start,
-                  &s[total].len, &s[total].dir, &s[total].a,
+                  &s[total].len, &s[total].dir,&s[total].temp,&s[total].a,
                    &s[total].b, &s[total].c, &s[total].d,
                     s[total].unit,s[total].node_name);
-            total++;
-            m[temp].cnt++;
+            if(s[total].temp=='+')
+            {
+                total++;
+                m[temp].cnt++;
+            }
+
         }
     }
     total=0;

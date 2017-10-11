@@ -45,10 +45,8 @@ ErrorCode 2 6 1 1.0 0.0 0.0 0.0 ""
 Status 0 2 1 1.0 0.0 0.0 0.0 ""
 
 EngineDataIEEE: 102 8
-2
+0
 
-EngSpeed 0 32 1 1.0 0.0 0.0 8000.0 "rpm"
-EngForce 32 32 1 1.0 0.0 0.0 0.0 "N"
 
 EngineData: 100 8
 6
