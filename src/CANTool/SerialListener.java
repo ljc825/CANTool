@@ -74,6 +74,11 @@ public class SerialListener implements SerialPortEventListener {
                         	elements[i] = elements[i] + "\r";
                         	tool.readCommand(elements[i]);
                         }
+                        if(buff.length()>512)
+                        {
+                        	tool.returnTheInfo(0, "");
+                        	buff = "";
+                        }
                         //System.out.println(new String(data));
                         //JOptionPane.showInputDialog(new String(data));
                         //String dataOriginal = new String(data);    //将字节数组数据转换位为保存了原始数据的字符串

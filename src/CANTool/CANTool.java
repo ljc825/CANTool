@@ -34,20 +34,23 @@ public class CANTool {
 	
 	public void readCommand(String command)
 	{
+		if(command == null || command.length() == 0)
+			returnTheInfo(0,"");
 		char type = command.charAt(0);
-		if(type=='V')
+		command = command.substring(0,command.length()-1);
+		if(type=='V' && command.length() == 1)
 		{
 			returnTheInfo(1,"SV2.5-HV2.0");
 		}
-		else if(type=='O')
+		else if(type=='O' && command.charAt(1) == '1' && command.length() == 2)
 		{
 			open();
 		}
-		else if(type=='C')
+		else if(type=='C' && command.length() == 1)
 		{
 			close();
 		}
-		else if(type=='S')
+		else if(type=='S' && command.length() == 2)
 		{
 			changeSpeed(command.charAt(1));
 		}
@@ -55,9 +58,12 @@ public class CANTool {
 		{
 			sendExtendedFrame(command);
 		}
-		else
+		else if(type=='t')
 		{
 			sendStandardFrame(command);
+		}
+		else {
+			returnTheInfo(0,"");
 		}
 		
 	}
@@ -69,10 +75,30 @@ public class CANTool {
 			returnTheInfo(0,"");
 			return;
 		}
+		int templen = command.length();
+		for(int i=1;i<templen;i++)
+		{
+			char tempchar = command.charAt(i);
+			if(!((tempchar>='0'&&tempchar<='9')||(tempchar>='A'&&tempchar<='F')))
+			{
+				returnTheInfo(0,"");
+				return;
+			}
+		}
+		if(templen<=4)
+		{
+			returnTheInfo(0,"");
+			return;
+		}
 		String idString = command.substring(1, 4);
 		String lenString = command.substring(4, 5);
 		int id = Integer.parseInt(idString, 16);
 		int len = Integer.parseInt(lenString, 16);
+		if(len<=0||len>8||templen!=9+len*2)
+		{
+			returnTheInfo(0,"");
+			return;
+		}
 		String data_16 = command.substring(5, 5+len*2);
 		String timeString = command.substring(5+len*2,9+len*2);
 		String data_2 = "";
@@ -118,12 +144,32 @@ public class CANTool {
 			returnTheInfo(0,"");
 			return;
 		}
+		int templen = command.length();
+		for(int i=1;i<templen;i++)
+		{
+			char tempchar = command.charAt(i);
+			if(!((tempchar>='0'&&tempchar<='9')||(tempchar>='A'&&tempchar<='F')))
+			{
+				returnTheInfo(0,"");
+				return;
+			}
+		}
+		if(templen<=9)
+		{
+			returnTheInfo(0,"");
+			return;
+		}
 		String idString = command.substring(1, 9);
 		
 		String lenString = command.substring(9, 10);
 		
 		int id = Integer.parseInt(idString, 16);
 		int len = Integer.parseInt(lenString, 16);
+		if(len<=0||len>8||templen!=14+len*2)
+		{
+			returnTheInfo(0,"");
+			return;
+		}
 		String data_16 = command.substring(10, 10+len*2);
 		String timeString = command.substring(10+len*2,14+len*2);
 		String data_2 = "";
