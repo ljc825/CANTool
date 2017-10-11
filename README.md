@@ -50,16 +50,17 @@ None.
 #### 2.6 Extension Points
 None.
 
-### 3. 接收 CAN 总线的 CAN 信息，识别其为标准帧或扩展帧，做出对应的处理后发送给 CANToolApp
+### 3. 接收 CAN 总线的 CAN 信息，识别其为标准帧还是扩展帧，做出对应的处理后发送给 CANToolApp
 
 #### 3.1 Brief Description
 接收 CAN 总线的 CAN 信息，识别其为标准帧或扩展帧，做出对应的处理后发送给 CANToolApp。
 #### 3.2 Flow of Events
 ##### 3.2.1 Basic Flow
 1. 监听 CAN 总线
-2. 接收来自 CAN 总线的数据
-3. 对来自 CAN 总线的数据进行解析
-4. 如果需要，对来自 CAN 总线的数据进行相应的处理
+2. 接收来自 CAN 总线的数据，即 CAN 信息
+3. 识别 CAN 信息为标准帧或扩展帧
+3. 对来自 CAN 总线的数据进行解析，提取分析 CAN 信号等
+4. 如果需要，对 CAN 信息进行相应的处理
 5. 如果需要，向 CANToolApp 返回结果
 
 ##### 3.2.2 Alternative Flows
