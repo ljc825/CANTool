@@ -82,7 +82,8 @@ None.
 ##### 4.2.1 Basic Flow
 1. 监听 CANToolApp 和 CAN 总线
 2. 接收来自 CANToolApp 的 CAN 信号和频率信息
-3. 将接收到的 CAN 信号按照指定频率发送到 CAN 总线
+3. 解析 CAN 信号
+3. 按照要求，将接收到的 CAN 信号按照指定频率发送到 CAN 总线
 
 ##### 4.2.2 Alternative Flows
 None.
