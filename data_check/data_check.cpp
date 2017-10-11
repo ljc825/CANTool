@@ -6,7 +6,7 @@ struct sign
 {
     int start,len,dir;
     double a,b,c,d;
-    char signal_name[32],unit[32],node_name[32];
+    char signal_name[32],unit[32],node_name[32],temp;
 };
 //定义CAN信息的结构体
 struct message
@@ -36,13 +36,17 @@ int main()
         }
         else
         {
-            scanf("%s : %d|%d@%d%*c (%lf,%lf) [%lf|%lf] %s %s",
+            scanf("%s : %d|%d@%d%c (%lf,%lf) [%lf|%lf] %s %s",
                   m[temp].s[cnt1].signal_name,&m[temp].s[cnt1].start,
-                  &m[temp].s[cnt1].len, &m[temp].s[cnt1].dir, &m[temp].s[cnt1].a,
+                  &m[temp].s[cnt1].len, &m[temp].s[cnt1].dir, &m[temp].s[cnt1].temp,
+                  &m[temp].s[cnt1].a,
                    &m[temp].s[cnt1].b, &m[temp].s[cnt1].c, &m[temp].s[cnt1].d,
                     m[temp].s[cnt1].unit,m[temp].s[cnt1].node_name);
-            cnt1++;
-            m[temp].cnt++;
+            if(m[temp].s[cnt1].temp=='+')
+            {
+                cnt1++;
+                m[temp].cnt++;
+            }
         }
     }
     for(int i=0;i<cnt;i++)
