@@ -8,12 +8,12 @@
 #### 1.2 Flow of Events
 ##### 1.2.1 Basic Flow
 监听 CAN 总线：
-1. 打开
-2. 监听
+1. 打开相应设置
+2. 监听 CAN 总线
 
 监听 CANToolApp：
-1. 打开
-2. 监听
+1. 打开相应设置
+2. 监听 CANToolApp
 
 ##### 1.2.2 Alternative Flows
 None.
