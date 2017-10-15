@@ -52,6 +52,7 @@ int main()
     for(int i=0;i<cnt;i++)
     {
         long long check=-1;
+        long long check1=0;
         int pos1,pos2;
         for(int j=0;j<m[i].cnt;j++)
         {
@@ -87,7 +88,12 @@ int main()
             }
 
         }
-        cout<<m[i].id<<" "<<check<<endl;
+        for(int j=0;j<64;j++)
+        {
+            check1|=((((unsigned long long)check>>(63-j))&1)<<j);
+        }
+
+        cout<<m[i].id<<" "<<check1<<endl;
     }
 
 
