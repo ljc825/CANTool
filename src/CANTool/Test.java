@@ -30,7 +30,7 @@ public class Test {
 		Thread thread = new Thread();
 		String tempString;
 		int time;
-		//1固定时间间隔，2随机时间间隔，3快速，4单信息测试曲线,多格式数据测试
+		//1固定时间间隔，2随机时间间隔，3快速，4单信息测试曲线,5多格式数据测试
 		while(scan.hasNext())
 		{
 			int temp = scan.nextInt();

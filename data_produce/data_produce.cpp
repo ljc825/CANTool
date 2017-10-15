@@ -38,6 +38,14 @@ void Transform(unsigned long long x,int k)
     }
 }
 
+void Transform1(unsigned long long x,int k)
+{
+    for(int i=0;i<k;i++)
+    {
+        print((x>>(i*4))&15);
+    }
+}
+
 int main()
 {
     freopen("data.in","r",stdin);
@@ -107,7 +115,7 @@ int main()
                 }
             }
         }
-        Transform(data,m[temp1].len*2);
+        Transform1(data,m[temp1].len*2);
         puts("\r");
     }
 

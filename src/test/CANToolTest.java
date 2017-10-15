@@ -129,9 +129,14 @@ public class CANToolTest {
 		
 		doNothing().when(spy).returnTheInfo(anyInt(),anyString());
 		spy.readCommand("O1\r");
-		spy.readCommand("t358800000000061030400000\r");
+		spy.readCommand("t36380000000300000D500000\r");
 		verify(spy,times(1)).open();
-		verify(spy,times(1)).sendStandardFrame("t358800000000061030400000");
+		try {
+			verify(spy,times(1)).sendStandardFrame("t36380000000300000D500000");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		verify(spy,times(2)).returnTheInfo(1,"");
 		//verify(spy,times(1)).returnTheInfo(0,"");
 		
@@ -143,9 +148,14 @@ public class CANToolTest {
 		
 		doNothing().when(spy).returnTheInfo(anyInt(),anyString());
 		spy.readCommand("O1\r");
-		spy.readCommand("t358800301513034014880010\r");
+		spy.readCommand("t36380000000300000D500010\r");
 		verify(spy,times(1)).open();
-		verify(spy,times(1)).sendStandardFrame("t358800301513034014880010");
+		try {
+			verify(spy,times(1)).sendStandardFrame("t36380000000300000D500010");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		verify(spy,times(2)).returnTheInfo(1,"");
 		//verify(spy,times(1)).returnTheInfo(0,"");
 		
@@ -157,9 +167,14 @@ public class CANToolTest {
 		
 		doNothing().when(spy).returnTheInfo(anyInt(),anyString());
 		spy.readCommand("O1\r");
-		spy.readCommand("t359800301513034014880010\r");
+		spy.readCommand("t3F380000000300000D500010\r");
 		verify(spy,times(1)).open();
-		verify(spy,times(1)).sendStandardFrame("t359800301513034014880010");
+		try {
+			verify(spy,times(1)).sendStandardFrame("t3F380000000300000D500010");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		verify(spy,times(1)).returnTheInfo(1,"");
 		verify(spy,times(1)).returnTheInfo(0,"");
 		
@@ -173,7 +188,12 @@ public class CANToolTest {
 		//spy.readCommand("O1\r");
 		spy.readCommand("t359800301513034014880010\r");
 		//verify(spy,times(1)).returnTheInfo(1,"");
-		verify(spy,times(1)).sendStandardFrame("t359800301513034014880010");
+		try {
+			verify(spy,times(1)).sendStandardFrame("t359800301513034014880010");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		verify(spy,times(1)).returnTheInfo(0,"");
 		
 	}
@@ -184,9 +204,14 @@ public class CANToolTest {
 		
 		doNothing().when(spy).returnTheInfo(anyInt(),anyString());
 		spy.readCommand("O1\r");
-		spy.readCommand("T00000358800000000061030400000\r");
+		spy.readCommand("T0000036380000000300000D500000\r");
 		verify(spy,times(1)).open();
-		verify(spy,times(1)).sendExtendedFrame("T00000358800000000061030400000");
+		try {
+			verify(spy,times(1)).sendExtendedFrame("T0000036380000000300000D500000");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		verify(spy,times(2)).returnTheInfo(1,"");
 		//verify(spy,times(1)).returnTheInfo(0,"");
 		
@@ -198,9 +223,14 @@ public class CANToolTest {
 		
 		doNothing().when(spy).returnTheInfo(anyInt(),anyString());
 		spy.readCommand("O1\r");
-		spy.readCommand("T00000358800301513034014880010\r");
+		spy.readCommand("T0000036380000000300000D500010\r");
 		verify(spy,times(1)).open();
-		verify(spy,times(1)).sendExtendedFrame("T00000358800301513034014880010");
+		try {
+			verify(spy,times(1)).sendExtendedFrame("T0000036380000000300000D500010");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		verify(spy,times(2)).returnTheInfo(1,"");
 		//verify(spy,times(1)).returnTheInfo(0,"");
 		
@@ -212,9 +242,14 @@ public class CANToolTest {
 		
 		doNothing().when(spy).returnTheInfo(anyInt(),anyString());
 		spy.readCommand("O1\r");
-		spy.readCommand("T00000359800301513034014880010\r");
+		spy.readCommand("T000003F380000000300000D500010\r");
 		verify(spy,times(1)).open();
-		verify(spy,times(1)).sendExtendedFrame("T00000359800301513034014880010");
+		try {
+			verify(spy,times(1)).sendExtendedFrame("T000003F380000000300000D500010");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		verify(spy,times(1)).returnTheInfo(1,"");
 		verify(spy,times(1)).returnTheInfo(0,"");
 		
@@ -227,7 +262,12 @@ public class CANToolTest {
 		doNothing().when(spy).returnTheInfo(anyInt(),anyString());
 		//spy.readCommand("O1\r");
 		spy.readCommand("T00000359800301513034014880010\r");
-		verify(spy,times(1)).sendExtendedFrame("T00000359800301513034014880010");
+		try {
+			verify(spy,times(1)).sendExtendedFrame("T00000359800301513034014880010");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		//verify(spy,times(1)).returnTheInfo(1,"");
 		verify(spy,times(1)).returnTheInfo(0,"");
 		
