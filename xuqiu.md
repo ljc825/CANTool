@@ -19,3 +19,7 @@ CANToolApp
 5、可以根据用户输入的物理量数值组装CAN信息，可以发送CAN信息，可以设置CAN信息的发送频率。
 6、可以将将所有CAN信息实时数据、CAN设定信息等 通过WEB API方式更新到远程数据库。
 7、......
+CANTool
+
+1、实时监听CAN总线和CANToolApp
+
