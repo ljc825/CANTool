@@ -12,3 +12,4 @@
 
 根据问题描述文档，我们可以大致确定这两个软件分别的功能需求。
 CANToolApp
+1、获取CANToolApp中所有可用的COM口列表，让用户选择映射有CANTool的COM，与CANTool连接，并进行初始设置，通过CANToolApp可以改变CANTool的运行状态（open，close）,CAN传输速率，并将这些配置信息保存。
