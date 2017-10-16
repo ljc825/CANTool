@@ -11,3 +11,4 @@
 在实际开发中，分别有小组模拟实现CANTool和实现CANToolApp的Windows和Android版本
 
 根据问题描述文档，我们可以大致确定这两个软件分别的功能需求。
+CANToolApp
