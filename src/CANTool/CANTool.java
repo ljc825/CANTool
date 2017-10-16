@@ -56,11 +56,21 @@ public class CANTool {
 		}
 		else if(type=='T')
 		{
-			sendExtendedFrame(command);
+			try {
+				sendExtendedFrame(command);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		else if(type=='t')
 		{
-			sendStandardFrame(command);
+			try {
+				sendStandardFrame(command);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		else {
 			returnTheInfo(0,"");
@@ -68,7 +78,7 @@ public class CANTool {
 		
 	}
 	
-	public void sendStandardFrame(String command) 
+	public void sendStandardFrame(String command) throws Exception, Exception 
 	{
 		if(state == 0)
 		{
@@ -137,7 +147,7 @@ public class CANTool {
 		
 	}
 
-	public void sendExtendedFrame(String command) 
+	public void sendExtendedFrame(String command) throws Exception, Exception 
 	{
 		if(state == 0)
 		{

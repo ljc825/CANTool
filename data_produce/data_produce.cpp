@@ -38,6 +38,15 @@ void Transform(unsigned long long x,int k)
     }
 }
 
+void Transform1(unsigned long long x,int k)
+{
+    for(int i=0;i<k;i+=2)
+    {
+        print((x>>((i+1)*4))&15);
+        print((x>>(i*4))&15);
+    }
+}
+
 int main()
 {
     freopen("data.in","r",stdin);
@@ -69,7 +78,7 @@ int main()
         }
     }
     srand((unsigned)time(NULL));
-    for(int i=0;i<300;i++)
+    for(int i=0;i<1000;i++)
     {
         printf("t");
         int temp1=(rand()%(cnt));
@@ -107,7 +116,7 @@ int main()
                 }
             }
         }
-        Transform(data,m[temp1].len*2);
+        Transform1(data,m[temp1].len*2);
         puts("\r");
     }
 
