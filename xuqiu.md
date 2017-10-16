@@ -15,3 +15,4 @@ CANToolApp
 1、获取CANToolApp中所有可用的COM口列表，让用户选择映射有CANTool的COM，与CANTool连接，并进行初始设置，通过CANToolApp可以改变CANTool的运行状态（open，close）,CAN传输速率，并将这些配置信息保存。
 2、能够以数值方式、仪表盘、实时曲线图等多种不同的方式显示CAN信号中的物理值及其实时变化。
 3、可以保存接收到的所有CAN信息，可以加载本地的CAN信息和CAN信号数据库，并以树状结构显示在GUI界面中，可以显示一条CAN信息的物理结构及信号分布情况。
+4、可以实现本地的CAN信息和CAN信号数据库/JSON或XML的相互转化。
