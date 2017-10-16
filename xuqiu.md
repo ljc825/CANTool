@@ -25,3 +25,6 @@ CANTool
 2、根据CANToolApp的命令，做出对应的回应，如返回版本信息，置位（open）、复位（close）、设置传输速率。
 3、接收CAN总线的CAN信息，识别其为标准帧或扩展帧，做出对应的处理后发送给CANToolApp。
 4、接收CANToolApp的CAN信号和频率信息，能够按照指定的频率发送CAN信号到CAN总线。
+
+
+目前对需求中存在疑问的地方：
