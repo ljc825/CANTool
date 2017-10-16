@@ -22,4 +22,4 @@ CANToolApp
 CANTool
 
 1、实时监听CAN总线和CANToolApp
-
+2、根据CANToolApp的命令，做出对应的回应，如返回版本信息，置位（open）、复位（close）、设置传输速率。
