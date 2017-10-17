@@ -35,3 +35,5 @@ CANTool装置不需要单独的识别CAN标准帧和扩展帧，CANToolApp接收
 我们以Intel的字节、位的排列表为例
 
 ![](https://i.imgur.com/5JE3IqX.png)
+
+Intel的排序方式小端序，即起始位置存放数据最低位(LSB），即顺序读入的最右一位数据，数据位的排列顺序为：从起始位置开始，以低
