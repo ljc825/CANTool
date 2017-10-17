@@ -46,3 +46,4 @@ Motorola的排序方式为大端序，即起始位置存放数据最高位(MSB�
 
 
 需要实现实时通信，可是使用Arduino的硬件配合串口/蓝牙来实现虚拟的CANTool装置，需要编写Arduino的C/C++语言程序，此方式可以适用于Android/Windows开发。或使用纯软件的com0com0虚拟串口方式来模拟，此方法只适用于Windows APP开发。
+4、CANTool模拟装置如何模拟监听的CAN总线发送CAN信息（预定义文档、随机函数）？
