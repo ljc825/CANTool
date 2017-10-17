@@ -30,3 +30,7 @@ CANTool
 目前对需求中存在疑问的地方：
 1、CANTool如何区分CAN标准帧和扩展帧？
 CANTool装置不需要单独的识别CAN标准帧和扩展帧，CANToolApp接收和发送给CANTool装置的CAN信息中，以大写T开始的CAN信息是CAN扩展帧信息，以小写t开始的CAN信息是CAN标准帧信息。
+2、小端序、大端序的详细样例？文档中给的样例比较难以理解
+
+我们以Intel的字节、位的排列表为例
+
