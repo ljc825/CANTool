@@ -34,3 +34,4 @@ CANTool装置不需要单独的识别CAN标准帧和扩展帧，CANToolApp接收
 
 我们以Intel的字节、位的排列表为例
 
+![](https://i.imgur.com/5JE3IqX.png)
