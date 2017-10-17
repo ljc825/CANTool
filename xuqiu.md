@@ -44,6 +44,9 @@ Motorola的排序方式为大端序，即起始位置存放数据最高位(MSB�
 
 3、如何实现CANTool装置与CANToolApp的实时交互（输入输出重定向、进程间通信）？
 
-
 需要实现实时通信，可是使用Arduino的硬件配合串口/蓝牙来实现虚拟的CANTool装置，需要编写Arduino的C/C++语言程序，此方式可以适用于Android/Windows开发。或使用纯软件的com0com0虚拟串口方式来模拟，此方法只适用于Windows APP开发。
+
+
 4、CANTool模拟装置如何模拟监听的CAN总线发送CAN信息（预定义文档、随机函数）？
+
+可以通过自己定义的数据模拟CAN总线的信息。但需要能够满足测试CAN信号的不同类型、排列方式及bit信息长度的Little Endian/Big Endian的需要。
