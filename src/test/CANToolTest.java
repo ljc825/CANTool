@@ -1,4 +1,4 @@
-package test;
+ï»¿package test;
 
 import static org.junit.Assert.*;
 import gnu.io.SerialPort;
@@ -26,7 +26,7 @@ public class CANToolTest {
 	@After
 	public void tearDown() throws Exception {
 	}
-	//²âÊÔ·µ»Ø°æ±¾ĞÅÏ¢
+	//æµ‹è¯•è¿”å›ç‰ˆæœ¬ä¿¡æ¯
 	@Test
 	public void readCommandTest1() {
 		
@@ -36,7 +36,7 @@ public class CANToolTest {
 		
 	}
 	
-	//²âÊÔÕı³£¿ª»ú
+	//æµ‹è¯•æ­£å¸¸å¼€æœº
 	@Test
 	public void readCommandTest2() {
 		
@@ -47,7 +47,7 @@ public class CANToolTest {
 		
 	}
 	
-	//²âÊÔ·ÇÕı³£¿ª»ú
+	//æµ‹è¯•éæ­£å¸¸å¼€æœº
 	@Test
 	public void readCommandTest3() {
 		
@@ -60,7 +60,7 @@ public class CANToolTest {
 		
 	}
 	
-	//²âÊÔÕı³£¹Ø»ú
+	//æµ‹è¯•æ­£å¸¸å…³æœº
 	@Test
 	public void readCommandTest4() {
 		
@@ -73,7 +73,7 @@ public class CANToolTest {
 		
 	}
 	
-	//²âÊÔ·ÇÕı³£¹Ø»ú
+	//æµ‹è¯•éæ­£å¸¸å…³æœº
 	@Test
 	public void readCommandTest5() {
 		
@@ -84,7 +84,7 @@ public class CANToolTest {
 		
 	}
 	
-	//²âÊÔ¹Ø»ú×´Ì¬ÏÂµ÷½ÚËÙ¶È
+	//æµ‹è¯•å…³æœºçŠ¶æ€ä¸‹è°ƒèŠ‚é€Ÿåº¦
 	@Test
 	public void readCommandTest6() {
 		
@@ -95,7 +95,7 @@ public class CANToolTest {
 		
 	}
 	
-	//²âÊÔ¹Ø»ú×´Ì¬ÏÂµ÷½ÚËÙ¶È
+	//æµ‹è¯•å…³æœºçŠ¶æ€ä¸‹è°ƒèŠ‚é€Ÿåº¦
 	@Test
 	public void readCommandTest7() {
 		
@@ -108,7 +108,7 @@ public class CANToolTest {
 		
 	}
 
-	//²âÊÔÁ¬Ğøµ÷½ÚËÙ¶È
+	//æµ‹è¯•è¿ç»­è°ƒèŠ‚é€Ÿåº¦
 	@Test
 	public void readCommandTest8() {
 		
@@ -123,7 +123,7 @@ public class CANToolTest {
 		
 	}
 	
-	//²âÊÔ·¢ËÍ1´Î±ê×¼Ö¡
+	//æµ‹è¯•å‘é€1æ¬¡æ ‡å‡†å¸§
 	@Test
 	public void readCommandTest9() {
 		
@@ -142,7 +142,7 @@ public class CANToolTest {
 		
 	}
 	
-	//²âÊÔ·¢ËÍ¶à´Î±ê×¼Ö¡
+	//æµ‹è¯•å‘é€å¤šæ¬¡æ ‡å‡†å¸§
 	@Test
 	public void readCommandTest10() {
 		
@@ -161,7 +161,7 @@ public class CANToolTest {
 		
 	}
 	
-	//²âÊÔ·¢ËÍ±ê×¼Ö¡´íÎó
+	//æµ‹è¯•å‘é€æ ‡å‡†å¸§é”™è¯¯
 	@Test
 	public void readCommandTest11() {
 		
@@ -180,7 +180,7 @@ public class CANToolTest {
 		
 	}
 	
-	//²âÊÔÎ´¿ª»ú·¢ËÍ±ê×¼Ö¡
+	//æµ‹è¯•æœªå¼€æœºå‘é€æ ‡å‡†å¸§
 	@Test
 	public void readCommandTest12() {
 		
@@ -198,7 +198,7 @@ public class CANToolTest {
 		
 	}
 	
-	//²âÊÔ·¢ËÍ1´ÎÀ©Õ¹Ö¡
+	//æµ‹è¯•å‘é€1æ¬¡æ‰©å±•å¸§
 	@Test
 	public void readCommandTest13() {
 		
@@ -217,7 +217,7 @@ public class CANToolTest {
 		
 	}
 	
-	//²âÊÔ·¢ËÍ¶à´ÎÀ©Õ¹Ö¡
+	//æµ‹è¯•å‘é€å¤šæ¬¡æ‰©å±•å¸§
 	@Test
 	public void readCommandTest14() {
 		
@@ -236,7 +236,7 @@ public class CANToolTest {
 		
 	}
 	
-	//²âÊÔ·¢ËÍÀ©Õ¹Ö¡´íÎó
+	//æµ‹è¯•å‘é€æ‰©å±•å¸§é”™è¯¯
 	@Test
 	public void readCommandTest15() {
 		
@@ -255,7 +255,7 @@ public class CANToolTest {
 		
 	}
 	
-	//²âÊÔÎ´¿ª»ú·¢ËÍÀ©Õ¹Ö¡´íÎó
+	//æµ‹è¯•æœªå¼€æœºå‘é€æ‰©å±•å¸§é”™è¯¯
 	@Test
 	public void readCommandTest16() {
 		

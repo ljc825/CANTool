@@ -1,11 +1,11 @@
-#include <cstdio>
-//¶¨ÒåCANĞÅÏ¢µÄ½á¹¹Ìå
+ï»¿#include <cstdio>
+//å®šä¹‰CANä¿¡æ¯çš„ç»“æ„ä½“
 struct message
 {
     int id,len,cnt;
     char message_name[32],node_name[32];
 }m[1010];
-//¶¨ÒåCANĞÅºÅµÄ½á¹¹Ìå
+//å®šä¹‰CANä¿¡å·çš„ç»“æ„ä½“
 struct sign
 {
     int start,len,dir;
@@ -14,7 +14,7 @@ struct sign
 }s[1010];
 int cnt=0,total=0,temp;
 char flag[32];
-//¶ÔCANÃèÊöÊı¾İ¿â½øĞĞµ÷Õû£¬Ê¹Êı¾İ¸ñÊ½ÄÜ¹»¸ü¼Ó±ãÓÚiavaÓïÑÔµÄ¶ÁÈë
+//å¯¹CANæè¿°æ•°æ®åº“è¿›è¡Œè°ƒæ•´ï¼Œä½¿æ•°æ®æ ¼å¼èƒ½å¤Ÿæ›´åŠ ä¾¿äºiavaè¯­è¨€çš„è¯»å…¥
 int main()
 {
     freopen("data.in","r",stdin);
