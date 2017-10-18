@@ -50,3 +50,5 @@ Motorola的排序方式为大端序，即起始位置存放数据最高位(MSB�
 4、CANTool模拟装置如何模拟监听的CAN总线发送CAN信息（预定义文档、随机函数）？
 
 可以通过自己定义的数据模拟CAN总线的信息。但需要能够满足测试CAN信号的不同类型、排列方式及bit信息长度的Little Endian/Big Endian的需要。
+
+5、CANToolApp是否需要实现Web API？
