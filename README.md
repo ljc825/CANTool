@@ -27,7 +27,7 @@ None.
 None.
 
 
-### 2. 根据 CANToolApp 的命令，做出对应的回应，如返回版本信息，置位（open）、复位（close）、设置传输速率
+### 2. 根据 CANToolApp 的命令，做出对应的回应，如返回版本信息、置位（open）、复位（close）、设置传输速率
 
 #### 2.1 Brief Description
 根据 CANToolApp 的命令，做出对应的回应，如返回版本信息，置位（open）、复位（close）、设置传输速率等。
