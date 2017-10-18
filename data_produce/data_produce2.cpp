@@ -140,7 +140,7 @@ int main()
                 x=(m[temp1].s[j].c-m[temp1].s[j].b)/m[temp1].s[j].a;
                 y=(m[temp1].s[j].d-m[temp1].s[j].b)/m[temp1].s[j].a;
                 long long temp2 = (rand()%(y-x+1))+x;
-                fout2<<m[temp1].s[j].signal_name<<" "<<temp2<<m[temp1].s[j].unit<<endl;
+                fout2<<m[temp1].s[j].signal_name<<" "<<(double)m[temp1].s[j].a*temp2+m[temp1].s[j].b<<m[temp1].s[j].unit<<endl;
                 pos1=m[temp1].s[j].start/8;
                 pos2=m[temp1].s[j].start%8;
                 if(m[temp1].s[j].dir==0)
