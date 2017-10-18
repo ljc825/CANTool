@@ -1,4 +1,4 @@
-package CANTool;
+ï»¿package CANTool;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -30,7 +30,7 @@ public class Test {
 		Thread thread = new Thread();
 		String tempString;
 		int time;
-		//1¹Ì¶¨Ê±¼ä¼ä¸ô£¬2Ëæ»úÊ±¼ä¼ä¸ô£¬3¿ìËÙ£¬4µ¥ĞÅÏ¢²âÊÔÇúÏß,5¶à¸ñÊ½Êı¾İ²âÊÔ
+		//1å›ºå®šæ—¶é—´é—´éš”ï¼Œ2éšæœºæ—¶é—´é—´éš”ï¼Œ3å¿«é€Ÿï¼Œ4å•ä¿¡æ¯æµ‹è¯•æ›²çº¿,5å¤šæ ¼å¼æ•°æ®æµ‹è¯•
 		while(scan.hasNext())
 		{
 			int temp = scan.nextInt();
