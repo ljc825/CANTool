@@ -1,14 +1,14 @@
-#include <cstdio>
+ï»¿#include <cstdio>
 #include<iostream>
 using namespace std;
-//¶¨ÒåCANĞÅºÅµÄ½á¹¹Ìå
+//å®šä¹‰CANä¿¡å·çš„ç»“æ„ä½“
 struct sign
 {
     int start,len,dir;
     double a,b,c,d;
     char signal_name[32],unit[32],node_name[32],temp;
 };
-//¶¨ÒåCANĞÅÏ¢µÄ½á¹¹Ìå
+//å®šä¹‰CANä¿¡æ¯çš„ç»“æ„ä½“
 struct message
 {
     int id,len,cnt;
