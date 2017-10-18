@@ -1,4 +1,4 @@
-package CANTool;
+﻿package CANTool;
 
 import serialException.NoSuchPort;
 import serialException.NotASerialPort;
