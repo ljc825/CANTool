@@ -90,7 +90,7 @@ int main()
         }
         for(int j=0;j<64;j++)
         {
-            check1|=((((unsigned long long)check>>(63-j))&1)<<j);
+            check1|=((((unsigned long long)check>>(j%8+(7-j/8)*8))&1)<<j);
         }
 
         cout<<m[i].id<<" "<<check1<<endl;
