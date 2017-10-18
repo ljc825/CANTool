@@ -1,4 +1,4 @@
-# CanTool Requirements
+﻿# CanTool Requirements
 
 ### 1. 实时监听 CAN 总线和 CANToolApp
 
