@@ -60,14 +60,14 @@ public class SerialListener implements SerialPortEventListener {
                         String[] elements = null;
                         elements = dataString.split("\r");
                         int len = elements.length;
-                        if(dataString.charAt(dataString.length()-1)!='\r')
+                        if(dataString.charAt(dataString.length()-1)!='\r')  // 检验最后是否读完了一行
                         {
-                        	buff = elements[len-1];
+                        	buff = elements[len-1];   // 没读完的行加入 buff
                         	len--;
                         }
                         else
                         {
-                        	buff = "";
+                        	buff = "";  // 最后一行读完，无需再缓存，清空buff
                         }
                         for(int i=0;i<len;i++)
                         {
