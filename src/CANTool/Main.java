@@ -1,4 +1,4 @@
-﻿package CANTool;
+package CANTool;
 
 import gnu.io.SerialPort;
 import serialPort.SerialTool;

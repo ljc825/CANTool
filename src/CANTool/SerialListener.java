@@ -1,4 +1,4 @@
-﻿package CANTool;
+package CANTool;
 import javax.swing.JOptionPane;
 
 import gnu.io.SerialPort;
