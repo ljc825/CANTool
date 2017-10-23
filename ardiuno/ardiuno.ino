@@ -23,12 +23,13 @@ void loop() {
     flag=false;
   }
   cnt++;
-  if(cnt%1000==0)
+  delay(10);
+  if(cnt%100==0)
   {
-    wt(cnt/1000);
+    wt(cnt/100);
   }
-  if(cnt>200000)
-    cnt-=200000;
+  if(cnt>20000)
+    cnt-=20000;
 }
 
 void print(int x)
@@ -38,10 +39,18 @@ void print(int x)
     else
         Serial.write('A'+x-10);
 }
-void Transform(long long x,int k)
+void Transform(unsigned long long x,int k)
 {
     for(int i=k-1;i>=0;i--)
     {
+        print((x>>(i*4))&15);
+    }
+}
+void Transform1(unsigned long long x,int k)
+{
+    for(int i=0;i<k;i+=2)
+    {
+        print((x>>((i+1)*4))&15);
         print((x>>(i*4))&15);
     }
 }
@@ -53,13 +62,12 @@ void wt(int k)
   Serial.write('t');
   Transform(100,3);
   Transform(8,1);
-  long long data=0;
   k%=200;
-  long long a=k*50;
-  long long b=200-k;
-  data|=a;
-  data|=(a<<16);
-  Transform(data,16);
+  unsigned long long a=k*40;
+  unsigned long long b=200-k;
+  Transform1(a,4);
+  Transform1(b,2);
+  Transform1(0,10);
   Serial.write('\r');
 }
 
